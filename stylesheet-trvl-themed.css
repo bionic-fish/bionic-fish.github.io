@@ -1,0 +1,121 @@
+/* layout & structure */
+
+/* colour scheme */
+/* dark-grey #505160 */ 
+/* mid-blue #68829E */
+
+body {
+	background: #505160;
+	padding: 10px
+	}
+	
+h1, h4 { 
+	color: black;
+	}
+	
+h2, h3, h5, h6, p {
+	color: white;
+	font-family: "Lucida Console", Monospace; 
+	}
+		
+section {
+	background: #68829E;
+	border: 1px solid #07575B;
+	box-shadow: 4px 4px;
+	margin: 20px;
+	padding: 10px;
+	text-align: center;
+	}
+		
+aside  {
+	background: #68829E;
+	border: 1px solid #07575B;
+	box-shadow: 4px 4px;
+	float: left;
+	width: 20%;
+	margin: 20px;
+	padding: 10px;
+	}
+		
+.header {
+	background-image: url("images/banner.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	border: 5px solid #2A3132;
+	box-shadow: 2px 2px;
+	color: black;
+	margin: 30px;
+	min-width: 50px;
+	padding: 1px;
+	text-align: center;
+	}
+	
+footer {
+	background: #68829E;
+	border: 5px solid #2A3132;
+	box-shadow: 2px 2px;
+	margin: 20px;
+	padding: 10px;
+	text-align: center;
+	}
+		
+/* Social media buttons */
+.fa {
+	color: white;
+    padding: 10px;
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 60%;
+	}
+	
+/* lists & menu bars */
+.topnav {
+	color: #90AFC5;
+	padding: 10px;
+	overflow: hidden;
+	text-align: center;
+	}
+
+/* style links for nav bar */
+.topnav a {
+	border: 1px 1px grey;
+	color: white;
+	text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 30px;
+	}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #90AFC5 ;
+    color: white;
+	}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #4CAF50;
+    color: black;
+	}
+	
+/* Add an active class to highlight the current page */
+.active {
+    background-color: #4CAF50;
+    color: white;
+	}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+	}
+
+
+
+
+
+
+
+
+
