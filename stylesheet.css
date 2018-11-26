@@ -1,3 +1,7 @@
+/* Font Family + Color Scheme
+font-family: 'Cutive Mono', monospace; [MAIN HEADINGS H1-H3]
+font-family: 'Pompiere', cursive; [SUB HEADS + <P> elements]
+*/
 /* Global Atts */
 
 * {
@@ -7,31 +11,62 @@ padding: 0;
 body {
 box-sizing: border-box;
 background-image: linear-gradient(to bottom, #D9B8E3, #fff);
+font-family: 'Pompiere', cursive;
 }
 img {
   width: 300px;
   max-height: 350px;
   overflow: hidden;
 }
-h1 {
-  font-size: 25px;
-  text-align: center;
-}
-h2, h3 {
+
+h1, h2, h3 {
   color: orange;
+  font-family: 'Cutive Mono', monospace;
+
 }
 h4 {
 
 }
-#main {
-  background-image: url("img/banner-bk.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  padding: 0 0 10px 0;
-  height: 35vh;
-
+/* animation of heading */
+.slide-left {
+  width: 100%;
+  overflow: hidden;
 }
+.slide-left h4 {
+  animation:slide-left 3s;
+}
+@keyframes slide-left {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+/* Landing | Home Page Image + Text Props */
+.hero {
+  background-image: url("img/alphine-bk.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  color: #000;
+  transform: translate(-50%, -50%);
+  font-family: 'Raleway', sans-serif;
+}
+
 section {
    text-align: center;
 
@@ -49,7 +84,21 @@ section {
 }
 
 /*SECTION work [class] properties */
+.work h3 {
+  animation: slide-right 5s ease-in;
+}
 
+@keyframes slide-right {
+  from {
+    margin-right: 100%;
+    width: 300%;
+
+  }
+  to {
+    margin-right: 0%;
+    width: 100%;
+  }
+}
 
 .col {
   float: left;
