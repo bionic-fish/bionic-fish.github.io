@@ -10,7 +10,7 @@ padding: 0;
 }
 body {
 box-sizing: border-box;
-background-image: linear-gradient(to bottom, #D9B8E3, #fff);
+background-image: linear-gradient(to bottom, SILVER, #fff);
 font-family: 'Pompiere', cursive;
 }
 img {
@@ -18,9 +18,11 @@ img {
   max-height: 350px;
   overflow: hidden;
 }
-
+p {
+  color: #D9B8E3;
+}
 h1, h2, h3 {
-  color: orange;
+  color: Purple;
   font-family: 'Cutive Mono', monospace;
 
 }
@@ -139,6 +141,7 @@ section {
 
 
 
+/* SECTION features */
 
 
 
