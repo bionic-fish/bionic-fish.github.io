@@ -10,25 +10,55 @@ padding: 0;
 }
 body {
 box-sizing: border-box;
-background-image: linear-gradient(to bottom, SILVER, #fff);
+
 font-family: 'Pompiere', cursive;
 }
 img {
   width: 300px;
-  max-height: 350px;
+  height: 300px;
   overflow: hidden;
 }
-p {
-  color: #D9B8E3;
+section {
+   text-align: center;
+   margin: 20px;
+   padding: 20px;
 }
 h1, h2, h3 {
-  color: Purple;
+  color: ; /* still deciding !!! */
   font-family: 'Cutive Mono', monospace;
+}
+.hero-container {
+  height: 35vh;
+  background-image: linear-gradient(to bottom, #000, #f4f4f4);
 
 }
-h4 {
+/* NAV properties */
+.sticky + .hero-container {
+  padding-top: 60px;
+}
+.top-stick {
+  text-align: center;
+  background: #000;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
 
 }
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+nav a {
+color: #fff;
+font-size: 20px;
+display: block;
+
+
+}
+
 /* animation of heading */
 .slide-left {
   width: 100%;
@@ -68,31 +98,38 @@ h4 {
   transform: translate(-50%, -50%);
   font-family: 'Raleway', sans-serif;
 }
-
-section {
-   text-align: center;
-
-   margin: 20px;
+.begining {
+  color: #000;
+  font-size: 50px;
+  text-shadow: 3px 2px #e191fd;
 }
+
+/* SECTION main */
+#main {
+  background-image: linear-gradient(to bottom, #bdd0fd, #fff);
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center;
+  padding: 10px;
+}
+#main p {
+  color: #000;
+  font-size: 22px;
+  line-height: 30px;
+}
+ h2 {
+  text-decoration: underline;
+  font-size: 35px;
+  /*
+  color: #e191fd;
+*/
+}
+
+
 
 
 /*SECTION work [class] properties */
-.work h3 {
-  animation: slide-right 5s ease-in;
-}
-
-@keyframes slide-right {
-  from {
-    margin-right: 100%;
-    width: 300%;
-
-  }
-  to {
-    margin-right: 0%;
-    width: 100%;
-  }
-}
-
 .col {
   float: left;
   border-bottom: 1px solid red;
@@ -102,17 +139,37 @@ section {
   align-items: center;
   align-content: center;
   justify-content: center;
+
 }
 
+.col img {
+  width: 100%;
+  height: 33.3%;
+}
 
-#gallery {
-  margin: auto;
-  width: 50%;
-  border: 1px solid pink;
+.work p {
+  font-size: 25px;
   padding: 10px;
 
+}
+.work h3 {
+  animation: slide-right 5s ease-in;
 
 }
+
+@keyframes slide-right {
+  from {
+    margin-right: 100%;
+    width: 300%;
+  }
+  to {
+    margin-right: 0%;
+    width: 100%;
+  }
+}
+
+
+
 .grid {
   display: flex;
   flex-direction: column;
@@ -134,20 +191,28 @@ section {
 /* SECTION designs */
 .designs {
   text-align: center;
+  padding: 10px;
+  margin: 20px;
+
 }
 .container-flex {
-  height: 50vh;
   clear: both;
   display: flex;
 }
 .des-col {
   width: 33.3%;
-  height: auto;
-  border: 1px solid green;
+
+  margin: 10px;
+
+  background-image: linear-gradient(to bottom, #bdd0fd, #fff);
 }
 /* SECTION features */
 
+.features {
+  margin-top: 25px;
+  padding: 10px;
 
+}
 
 
 
@@ -165,13 +230,11 @@ section {
   grid-auto-rows: minmax(100px, auto);
   position: relative;
   padding: 10px;
-
 }
 .ft-gd1 {
   grid-column-start: 1;
   grid-column-end: 1;
   background: #fff;
-
   text-align: center;
   padding-top: 20px;
 }
@@ -183,7 +246,6 @@ section {
   text-align: center;
   padding-top: 20px;
 }
-
 .ft-gd3 {
   grid-column-start: 1;
   grid-column-end: 1;
@@ -198,12 +260,13 @@ section {
   grid-column-start: 2;
   grid-column-end: 2;
   grid-row-start: 2;
-
-
   text-align: center;
   padding-top: 20px;
 }
 /* FOOTER child elements */
+.copy {
+
+}
 .signiture {
 
 }
@@ -213,14 +276,11 @@ section {
   padding: 20px;
   font-size: 24px;
 }
-
 .icons {
   font-size: 25px;
   text-align: center;
 }
-.copy {
 
-}
 .fa {
   padding: 20px;
   font-size: 30px;
@@ -256,7 +316,20 @@ img {
   width: 100%;
   display: inline;
 }
+.container-flex {
+  display: block;
+  padding: 10px;
+  margin-top: 20px;
+
+}
+.des-col {
+  width: 100%;
+
+}
 .split {
+  display: block;
+}
+nav a {
   display: block;
 }
 
