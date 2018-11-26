@@ -74,16 +74,7 @@ section {
 
    margin: 20px;
 }
-.container-flex {
-  height: 50vh;
-  clear: both;
-  display: flex;
-}
-.des-col {
-  width: 33.3%;
-  height: auto;
-  border: 1px solid green;
-}
+
 
 /*SECTION work [class] properties */
 .work h3 {
@@ -140,7 +131,20 @@ section {
 
 
 
-
+/* SECTION designs */
+.designs {
+  text-align: center;
+}
+.container-flex {
+  height: 50vh;
+  clear: both;
+  display: flex;
+}
+.des-col {
+  width: 33.3%;
+  height: auto;
+  border: 1px solid green;
+}
 /* SECTION features */
 
 
