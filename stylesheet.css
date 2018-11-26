@@ -1,0 +1,207 @@
+/* Global Atts */
+
+* {
+margin: 0;
+padding: 0;
+}
+body {
+box-sizing: border-box;
+background-image: linear-gradient(to bottom, #D9B8E3, #fff);
+}
+img {
+  width: 300px;
+  max-height: 350px;
+  overflow: hidden;
+}
+h1 {
+  font-size: 25px;
+  text-align: center;
+}
+h2, h3 {
+  color: orange;
+}
+h4 {
+
+}
+#main {
+  background-image: url("img/banner-bk.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 0 0 10px 0;
+  height: 35vh;
+
+}
+section {
+   text-align: center;
+
+   margin: 20px;
+}
+.container-flex {
+  height: 50vh;
+  clear: both;
+  display: flex;
+}
+.des-col {
+  width: 33.3%;
+  height: auto;
+  border: 1px solid green;
+}
+
+/*SECTION work [class] properties */
+
+
+.col {
+  float: left;
+  border-bottom: 1px solid red;
+  width: 50%;
+  padding-top: 10px;
+  margin: auto;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+
+#gallery {
+  margin: auto;
+  width: 50%;
+  border: 1px solid pink;
+  padding: 10px;
+
+
+}
+.grid {
+  display: flex;
+  flex-direction: column;
+}
+.item {
+  background-color: green;
+  color: white;
+  height: 150px;
+  width: 150px;
+  padding: 10px;
+  margin: 30px;
+  overflow: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER 2X2 GRID LAYOUT */
+
+.split {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  position: relative;
+  padding: 10px;
+
+}
+.ft-gd1 {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  background: #fff;
+
+  text-align: center;
+  padding-top: 20px;
+}
+.ft-gd2 {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  background: #000;
+  border-radius: 50px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.ft-gd3 {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 2;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding-top: 20px;
+  border-radius: 50px;
+}
+.ft-gd4 {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 2;
+
+
+  text-align: center;
+  padding-top: 20px;
+}
+/* FOOTER child elements */
+.signiture {
+
+}
+.links a {
+  color: #fff;
+  text-decoration: none;
+  padding: 20px;
+  font-size: 24px;
+}
+
+.icons {
+  font-size: 25px;
+  text-align: center;
+}
+.copy {
+
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Meedia queries for mobile */
+@media screen and (max-width: 800px) {
+img {
+  height: auto;
+  width: 100%;
+}
+.col {
+  width: 100%;
+  display: inline;
+}
+.split {
+  display: block;
+}
+
+}
