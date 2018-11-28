@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  box-sizing: border-box;
+  background-color: #6A95C0;
+  color: #fff;
+  text-align: center;
+}
+#headings {
+  font-size: 75px;
+  color: white;
+  padding-top: 10px;
+  height: 300px;
+}
+#headings h1 {
+  font-size: 50px;
+  position: relative;
+
+  animation: headings;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+@keyframes headings {
+  0% {top: -50px}
+  100% {top: 200px}
+}
+
+
+.main {
+  padding: 30px;
+  margin: auto;
+}
+.main h2, .main p {
+  font-size: 30px;
+  position: relative;
+
+  animation: main;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+@keyframes main {
+  0% {left: -1500px}
+  100% {left: 0px}
+}
