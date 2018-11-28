@@ -9,7 +9,7 @@ body {
   text-align: center;
 }
 #headings {
-  font-size: 75px;
+  font-size: 55px;
   color: white;
   padding-top: 10px;
   height: 300px;
@@ -24,16 +24,16 @@ body {
 }
 @keyframes headings {
   0% {top: -50px}
-  100% {top: 200px}
+  100% {top: 100px}
 }
 
 
 .main {
-  padding: 30px;
+  padding: 20px;
   margin: auto;
 }
 .main h2, .main p {
-  font-size: 30px;
+  font-size: 20px;
   position: relative;
 
   animation: main;
