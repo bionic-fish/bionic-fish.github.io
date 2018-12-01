@@ -64,7 +64,7 @@ display: block;
   width: 100%;
   overflow: hidden;
 }
-.slide-left h4 {
+.hero-sub h1, .hero-sub h2 {
   animation:slide-left 3s;
 }
 @keyframes slide-left {
@@ -98,7 +98,8 @@ display: block;
   transform: translate(-50%, -50%);
   font-family: 'Raleway', sans-serif;
 }
-.hero-hire {
+
+.hero-sub {
   background-image: url("img/alphine-bk.jpg");
   height: 50vh;
   background-position: center;
@@ -199,7 +200,9 @@ display: block;
 
 
 
-/* SECTION designs */
+/* SECTION designs
+FLEX Section - Flex Direction = Column
+ */
 .designs {
   text-align: center;
   padding: 10px;
@@ -330,7 +333,7 @@ iFrame class="preview" */
 
 
 
-/* Meedia queries for mobile */
+/* Media queries for mobile */
 @media screen and (max-width: 800px) {
 img {
   height: auto;
