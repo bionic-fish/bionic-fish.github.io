@@ -98,7 +98,7 @@ display: block;
   transform: translate(-50%, -50%);
   font-family: 'Raleway', sans-serif;
 }
-.hero-hire, .hero-gallery {
+.hero-hire {
   background-image: url("img/alphine-bk.jpg");
   height: 50vh;
   background-position: center;
