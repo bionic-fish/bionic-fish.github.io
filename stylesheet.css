@@ -441,7 +441,13 @@ properties */
 
 
 
-
+/* Media queries for desktop between 800px & 1000px */
+@media screen and (max-width: 1100px) {
+  .emulate-preview {
+    width: 100%;
+    margin: auto;
+  }
+}
 
 
 
