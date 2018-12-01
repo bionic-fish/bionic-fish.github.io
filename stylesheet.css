@@ -225,7 +225,8 @@ display: block;
 
 }
 
-/* HIRE>HTML id=MAPS */
+/* HIRE.HTML
+ id=MAPS */
 #maps {
   height: 400px;
   width: 100%;
@@ -235,8 +236,13 @@ display: block;
   z-index: -1;
 }
 
-
-
+/* HIRE.html
+iFrame class="preview" */
+.preview {
+  height: 400px;
+  width: 550px;
+  max-width: 960px;
+}
 
 
 
