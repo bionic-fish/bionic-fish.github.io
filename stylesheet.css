@@ -354,7 +354,7 @@ properties */
 .-emulate-preview {
   width: 100%;
   height: auto;
-  
+
 }
 /* FOOTER 2X2 GRID LAYOUT */
 
@@ -448,6 +448,9 @@ properties */
 
 /* Media queries for mobile */
 @media screen and (max-width: 800px) {
+  .Respreview {
+    width: 100%
+  }
 img {
   height: auto;
   width: 100%;
