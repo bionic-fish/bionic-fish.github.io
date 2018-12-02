@@ -1,5 +1,8 @@
 # bionicfish.github.io
 
+This page is treated as a learning page and is constantly updating and adding new content.
+Please bare with me until I create the remaining content needed to fill the sections.
+
 A personal webpage for aspiring web developer Mr Christopher Harris. An online portfolio showcasing my aquired skills and knowledge using the last technologies relating to web development, HTML, CSS and JavaScript.
 
 Going for a more simplistic design than my first portfolio, see here: https://github.com/bionic-fish/bionic-fish.github.io 
