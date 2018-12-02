@@ -16,18 +16,21 @@
 </head>
 <body>
 
-
   <nav id="navbar" class="top-stick">
 
     <h1>C Harris Digital Content Creator & Web Developer</h1>
-      <a href="index.html" class="active">Home</a>
-      <a href="#gallery.html">Work</a>
-      <a href="#form-request.html">Enquiries</a>
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Work</a>
       <a href="hire.html">Contact</a>
 
   </nav>
 
-
+  <div class="hero-sub">
+  <div class="hero-text">
+  <h1><span class="begining slide-left">C</span>hristopher Harris</h1>
+  <h3><span class="begining">D</span>igital Portfolio</h3>
+  </div>
+  </div>
 
   <section id="main">
     <h2>About Me</h2>
@@ -61,6 +64,36 @@
     as well as functions and features that can be implemented into almost any web page
     or web based application.</p>
   </section>
+<!--
+  <section class="container">
+    <h2>Designs & Layouts</h2>
+
+    <div class="container-flex">
+
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+
+    </div> -->
+    <!--container-flex ends here
+  </section> -->
+<br>
+
+<h2 style="text-align: center">Melbourne Based Web Developer</h2>
+<br>
+  <div id="maps"></div>
+
+<script>
+  var map;
+
+  function initMap() {
+    map = new google.maps.Map(document.getElementById('maps'), {
+      center: {lat: -37.81, lng: 144.96 },
+      zoom: 8
+    });
+  }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgVFksqUlxDK_YRxd9X-WPWZZYcD1DUHg&callback=initMap" async defer></script>
 
   <section class="enquiry">
     <h2>For Web Enquiries</h2>
@@ -72,8 +105,25 @@
   <section class="recruit">
     <h2>For Recruiters</h2>
 
-    <p>Enquire Within :<br> <b>CREATE RESUME-link[pdf & docs]<br>
-                          CREATE SOCIAL-link[codepen, github, linkedIn]</b></p>
+    <iframe class="Respreview" src="docs/webRes.html"></iframe>
+    <p>Enquire Within :<br>
+      <b>RESUME Download links:<br>
+        <a href="docs/CDHarrisResume.pdf" alt="PDF resume">PDF</a>
+        <br>
+        <a href="docs/CDHarrisResume.docx" alt="WordDOC resume">WORD</a>
+        <br>
+      <b>Social External Links:</b><br>
+        <a href="mailto:c.d.harris.dedoc@gmail.com"
+           alt="Google">Google Account</a>
+        <br>
+        <a href="https://github.com/bionic-fish"
+           alt="Github">Github Account</a>
+        <br>
+        <a href="https://www.linkedin.com/in/chris-harris-b9061711a"
+           alt="LinkedIn">LinkedIn Account</a>
+        <br>
+
+
 
   </section>
 
@@ -85,8 +135,8 @@
   </div>
   <div class="ft-gd2 links">
     <a href="index.html">Home Page</a>
-    <a href="contact.html">Contact & Enquiries</a>
-    <a href="hire.html">Hire Now</a>
+    <a href="gallery.html">Work</a>
+    <a href="hire.html">Contact</a>
   </div>
   <div class="ft-gd3 icons">
     <a href="mailto:c.d.harris.dedoc@gmail.com" class="fa fa-google"></a>
