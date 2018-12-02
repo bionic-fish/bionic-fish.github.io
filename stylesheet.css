@@ -116,9 +116,10 @@ display: block;
   text-shadow: 3px 2px #e191fd;
 }
 
+
 /* SECTION main */
 #main {
-  background-image: linear-gradient(to bottom, #dbcdcd, #fff);
+  background-image: linear-gradient(to bottom, #836c90, #fff);
   margin-top: 0;
   margin-left: 0;
   margin-right: 0;
@@ -351,9 +352,9 @@ properties */
   max-width: 960px;
 }
 
-.-emulate-preview {
+.emulate-preview {
   width: 100%;
-  height: auto;
+  height: 50%;
 
 }
 /* FOOTER 2X2 GRID LAYOUT */
@@ -445,7 +446,8 @@ properties */
 @media screen and (max-width: 1100px) {
   .emulate-preview {
     width: 100%;
-    margin: auto;
+    height: auto;
+
   }
 }
 
