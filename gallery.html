@@ -4,94 +4,219 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Coming Soon | Gallery</title>
-  <link rel="stylesheet" href="gallery.css">
+  <title>Gallery</title>
+
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
 
   <!-- External Libaries -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Pompiere" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
 </head>
-<body>
-  <header id="headings">
-    <h1>Page Currently Under Maintenance</h1>
-  </header>
+<body id="galleryHTML" onload="showMos()">
 
-  <section>
-    <h1>Gallery Coming Soon</h1>
-    <h2 id="counter"></h2>
+  <nav id="navbar" class="top-stick">
+    <h1>C Harris Digital Content Creator & Web Developer</h1>
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Work</a>
+      <a href="hire.html">Contact</a>
+  </nav>
+
+<div class="hero-sub">
+  <div class="hero-text">
+    <h1><span class="begining slide-left">C</span>hristopher Harris</h1>
+    <h3><span class="begining">D</span>igital Portfolio</h3>
+  </div>
+</div>
+
+<section id="main" class="container">
+  <h2>Personal Work & Mockup Designs</h2>
+
+  <p>Below are different layout options for gallery to be chosen by the user.</p>
+  <br>
+  <p>In creating the different layout options, i feel the user can better choose
+    the gallery style that suites them per their choice of viewing device. Mobile,
+    tablet, screen reader, laptop or desktop.</p>
+
+  <h2>Layout Options</h2>
+
+  <input id="mosBTN" onclick="showMos()" type="radio" value="submit"> Grid Moasaic Layout</input>
+  <input id="stnBTN" onclick="showSta()" type="radio" value="submit"> Standard Gallery</input>
+
+  <input type="radio" value="response"> Slide Show Gallery</input>
+</section>
+
+<!-- Moasaic Grid Gallery
+  Elements + markup -->
+
+  <section id="mosGrid" class="grid-mos">
+    <h2>Responsive Gallery Section</h2><br>
+    <div class="mosaic-container">
+      <div class="mos-item medium one"><h1>Mock Up<h1></div>
+      <div class="mos-item large two"><h1><a href="assests/CoffeeSPA/index.html">CoffeeShop Website</a></h1></div>
+      <div class="mos-item medium three"><h1>Mock Up</h1></div>
+      <div class="mos-item small four"></div>
+      <div class="mos-item tall five"><h1><a href="assests/BusinessSPA/index.html">Personal Business Website</a></h1></div>
+      <div class="mos-item wide six"><h1><a href="assests/PhotoSPA/index.html">Photography Portfolio Website</a></h1></div>
+
+      <div class="mos-item large seven"><h1><a href="assests/HotelSPA/index.html">Hotel App Website</a></h1></div>
+      <div class="mos-item medium eight"><h1>Med 2x2</h1></div>
+      <div class="mos-item tall nine"><h1>tall 3x2</h1></div>
+      <div class="mos-item large ten"><h1>Lrg 3x3</h1></div>
+
+
+
+    </div>
+</section>
+
 <br>
 
+<section id="standardGrid" class="gdbox-container" style="padding-top: 20px">
+  <h2>Grid Gallery Section</h2>
+
+  <br>
+
+  <div class="grid-container">
+
+    <div class="gdbox gdbox-1">Hotel App Concept</div>
+    <div class="gdbox gdbox-2">Ice Cream App Concept</div>
+    <div class="gdbox gdbox-3">Coffee Shop Website</div>
+    <div class="gdbox gdbox-4">React Emulated Website</div>
+
+    <div class="gdbox gdbox-5">Animated Icon or Logo</div>
+    <div class="gdbox gdbox-6">Transform | Translate Action</div>
+    <div class="gdbox gdbox-7">Drop-Down Menu</div>
+    <div class="gdbox gdbox-8">Search Bar</div>
+
+  </div><!-- grid container ends here -->
+
+</section>
+
 <br>
-    <p>A responsive and interactive gallery is under way and will be
-      ready before the end of December</p>
-  </section>
 
-  <section class="countdown">
+<div id="flexGrid" class="container-f">
+    <h2>Flex Gallery Section</h2><br>
+
+<div class="gal-flex-container">
+  <div class="gal-flex-item">Flex 01</div>
+  <div class="gal-flex-item">Flex 02</div>
+  <div class="gal-flex-item">Flex 03</div>
+
+  <div class="gal-flex-item">Flex 04</div>
+  <div class="gal-flex-item">Flex 05</div>
+  <div class="gal-flex-item">Flex 06</div>
+
+  <div class="gal-flex-item">Flex 07</div>
+  <div class="gal-flex-item">Flex 08</div>
+  <div class="gal-flex-item">Flex 09</div>
+
+</div>
+
+</div>
 
 
 
-  </section>
-  <!-- Counter Timer Script Function
-  Targetting Div Element id=counter -->
-<script>
-  // Set the date for count down
-  var countDownDate = new Date("Dec 31, 2018 23:59:59").getTime();
-  // update the count down every second
-  var x = setInterval(function() {
-    // Get todays time and Date
-    var now = new Date().getTime();
-    // Find the distance between now and count down Date
-    var distance = countDownDate - now;
+<!-- comment out section flex!
+<section class="container">
+  <h2>Flex Gallery Section</h2>
 
-    //Time calculations for days, hours, minutes & seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  <div class="container-flex">
 
-    // display the result in the element with id="counter"
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
 
-    document.getElementById("counter").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
-
-    // if the count down is finished, write some Text
-    if (distance < 0) {
-      clearInterval(x);
-      document.getElementById("counter").innerHTML = "Count Expired!"
-    }
-  }, 1000);
-
-</script>
-
-<!--  <a href="index.html" class="btn">Back to Home</a> -->
-
-  <div class="flex-container">
 
   </div>
 
+<br>
+  <div class="container-flex">
 
-  <footer class="split">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+  </div>
+  </section>
+  container-flex ends here  -->
+ <!--container-flex ends here-->
+
+
+
+
+<!-- comment out stacking gallery
+<section class="container">
+  <h2>Stacking Gallery Section</h2>
+  <div class="resGridRow">
+
+    <div class="resGridCol">
+      <img src="img/tvlApp1.jpg" alt="" style="width:100%">
+      <img src="img/tvlApp1.jpg" alt="" style="width:100%">
+      <img src="img/tvlApp1.jpg" alt="" style="width:100%">
+      <img src="img/tvlApp1.jpg" alt="" style="width:100%">
+    </div><!-- grid col
+
+
+  <div class="resGridCol">
+    <img src="img/tvlApp1.jpg" alt="" style="width:100%">
+    <img src="img/tvlApp1.jpg" alt="" style="width:100%">
+    <img src="img/tvlApp1.jpg" alt="" style="width:100%">
+    <img src="img/tvlApp1.jpg" alt="" style="width:100%">
+  </div><!-- grid col -
+
+
+<div class="resGridCol">
+  <img src="img/tvlApp1.jpg" alt="" style="width:100%">
+  <img src="img/tvlApp1.jpg" alt="" style="width:100%">
+  <img src="img/tvlApp1.jpg" alt="" style="width:100%">
+  <img src="img/tvlApp1.jpg" alt="" style="width:100%">
+</div><!-- grid col -
+
+</div><!-- grid row
+
+</section> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="split">
   <div class="ft-gd1 signiture slide-left">
     <h4>Page Developed By<br>
-      C Harris</h4>
-      <h4>icon animation here</h4>
+    C Harris</h4>
+    <h4>icon animation here</h4>
   </div>
+
   <div class="ft-gd2 links">
     <a href="index.html">Home Page</a>
-    <a href="contact.html">Contact & Enquiries</a>
-    <a href="hire.html">Hire Now</a>
+    <a href="gallery.html">Work</a>
+    <a href="hire.html">Contact</a>
   </div>
+
   <div class="ft-gd3 icons">
     <a href="mailto:c.d.harris.dedoc@gmail.com" class="fa fa-google"></a>
     <a href="https://www.linkedin.com/in/chris-harris-b9061711a/" class="fa fa-linkedin"></a>
     <a href="https://github.com/bionic-fish" class="fa fa-github"></a>
     <a href=""></a>
   </div>
+
   <div class="ft-gd4 copy">
     <h4>Designed & Developed By Christopher Harris</h4>
-      <h5>Digital Content Creator | Front-end Web Developer</h5>
+    <h5>Digital Content Creator | Front-end Web Developer</h5>
+  </div>
 
-    </div>
-  </footer>
+</footer>
+
+<script src="index.js"></script>
 </body>
 </html>

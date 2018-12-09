@@ -10,8 +10,9 @@ padding: 0;
 }
 body {
 box-sizing: border-box;
+font-family: 'Open Sans Condensed', sans-serif;
 
-font-family: 'Pompiere', cursive;
+
 }
 img {
   width: 300px;
@@ -43,7 +44,7 @@ h1, h2, h3 {
   position: fixed;
   top: 0;
   width: 100%;
-  
+
 
 
 }
@@ -56,6 +57,7 @@ nav a {
 color: #fff;
 font-size: 20px;
 display: block;
+z-index: 100;
 
 
 }
@@ -95,14 +97,14 @@ display: block;
   position: absolute;
   top: 40%;
   left: 50%;
-  color: #000;
+  color: grey;
   transform: translate(-50%, -50%);
   font-family: 'Raleway', sans-serif;
 }
 
 .hero-sub {
   background-image: url("img/alphine-bk.jpg");
-  height: 50vh;
+  height:50vh;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
@@ -114,12 +116,13 @@ display: block;
 .begining {
   color: #000;
   font-size: 50px;
-  text-shadow: 3px 2px #e191fd;
+  text-shadow: 3px 2px grey;
 }
 
 /* SECTION main */
 #main {
-  background-image: linear-gradient(to bottom, #dbcdcd, #fff);
+  background-image: linear-gradient(to bottom, grey, #fff);
+
   margin-top: 0;
   margin-left: 0;
   margin-right: 0;
@@ -145,7 +148,7 @@ display: block;
 /*SECTION work [class] properties */
 .col {
   float: left;
-  border-bottom: 1px solid red;
+
   width: 50%;
   padding-top: 10px;
   margin: auto;
@@ -219,7 +222,7 @@ FLEX Section - Flex Direction = Column
 
   margin: 10px;
 
-  background-image: linear-gradient(to bottom, #bdd0fd, #fff);
+  background-image: linear-gradient(to bottom, #000, #fff );
 }
 /* SECTION features & functions */
 
@@ -236,7 +239,7 @@ FLEX Section - Flex Direction = Column
   margin: auto;
   max-height: 500px;
   width: 100%;
-  border: 1px solid red;
+
 }
 .features-container h2 {
   color: purple;
@@ -344,7 +347,7 @@ properties */
 
 
   /*max-height: 500px;*/
-  border: 1px solid red;
+
 
 }
 
@@ -458,24 +461,28 @@ properties */
   Mos-Grid layout properties */
   #galleryHTML {
     font-family: 'Open Sans Condensed', sans-serif;
+
   }
 
 .grid-mos {
   padding: 20px 10px;
   height: 70vh;
 
+
 }
 .mosaic-container {
   display: grid;
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-rows: repeat(11, 1fr);
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 10px;
 
   height: 100%;
   width: 100%;
+
+
 }
 .mos-item {
-  background: inherit;
+
   color: #000;
   display:flex;
   align-items: center;
@@ -483,7 +490,8 @@ properties */
 
   transition-property: all ease;
   transition-duration: 2s;
-  opacity: 0.3;
+  opacity: 0.6;
+
 }
 .mos-item:hover {
   color: purple;
@@ -497,7 +505,7 @@ properties */
 
 /* Grid mosaic items */
 .one {
-  background-image: url("img/gallery/gal-item-01.JPG");
+
   background-position: top left;
   background-size: cover;
   opacity: 0.6;
@@ -533,7 +541,7 @@ properties */
   transition-duration: 2s;
 }
 .five {
-  background-image: url("img/gallery/gal-item-05.JPG");
+  background-image: url("img/gallery/gal-item-01.JPG");
   background-position: top left;
   background-size: cover;
   opacity: 0.6;
@@ -542,7 +550,16 @@ properties */
   transition-duration: 2s;
 }
 .six {
-  background-image: url("img/gallery/gal-item-04.JPG");
+  background-image: url("img/gallery/photoLanding.JPG");
+  background-position: top left;
+  background-size: cover;
+  opacity: 0.6;
+
+  transition-property: all ease;
+  transition-duration: 2s;
+}
+.seven {
+  background-image: url("img/tvlApp1.JPG");
   background-position: top left;
   background-size: cover;
   opacity: 0.6;
@@ -598,18 +615,30 @@ Sizing:  1x1, 2x2, 3x3, 2x3, 3x2  */
 }
 
 .gdbox-1 {
+  background-image: url("img/tvlApp1.JPG");
+  background-position: center;
+  background-size: cover;
   grid-column-start: 1;
   grid-row-start: 1; */
 }
 .gdbox-2 {
+  background-image: url("img/icPreview-001.JPG");
+  background-position: center;
+  background-size: cover;
   grid-column-start: 2;
   grid-row-start: 1;
 }
 .gdbox-3 {
+  background-image: url("img/coffeePreview-002.JPG");
+  background-position: center;
+  background-size: cover;
   grid-column-start: 3;
   grid-row-start: 1;
 }
 .gdbox-4 {
+  background-image: url("img/reactjs-emulate.JPG");
+  background-position: center;
+  background-size: cover;
   grid-column-start: 4;
   grid-row-start: 1;
 }
