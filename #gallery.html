@@ -12,8 +12,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Pompiere" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
 </head>
-<body>
+<body id="galleryHTML" onload="showMos()">
 
   <nav id="navbar" class="top-stick">
     <h1>C Harris Digital Content Creator & Web Developer</h1>
@@ -32,11 +33,89 @@
 <section id="main" class="container">
   <h2>Layout Options</h2>
 
-  <input type="radio" value="grid"> Grid Layout</input>
-  <input type="radio" value="flex"> Flex Slideshow</input>
-  <input type="radio" value="response"> Responsive Layout</input>
+  <input id="mosBTN" onclick="showMos()" type="radio" value="submit"> Grid Moasaic Layout</input>
+  <input id="stnBTN" onclick="showSta()" type="radio" value="submit"> Standard Gallery</input>
+
+  <input type="radio" value="response"> Slide Show Gallery</input>
 </section>
 
+<!-- Moasaic Grid Gallery
+  Elements + markup -->
+
+  <section id="mosGrid" class="grid-mos">
+    <h2>Responsive Gallery Section</h2><br>
+    <div class="mosaic-container">
+      <div class="mos-item medium one">
+        <h1>Med 2x2
+          <!--<a href="gallery.html">
+          View--></a>
+        <h1>
+      </div>
+      <div class="mos-item large two"><h1>Lrg 3x3</h1></div>
+      <div class="mos-item medium three"><h1>Med 2x2</h1></div>
+      <div class="mos-item small four"><h1>Sml 1x1</h1></div>
+      <div class="mos-item tall five"><h1>tall 3x2</h1></div>
+      <div class="mos-item wide six"><h1>wide 2x3</h1></div>
+    </div>
+</section>
+
+<br>
+
+<section id="standardGrid" class="gdbox-container" style="padding-top: 20px">
+  <h2>Grid Gallery Section</h2>
+
+  <br>
+
+  <div class="grid-container">
+
+    <div class="gdbox gdbox-1">IMG 01</div>
+    <div class="gdbox gdbox-2">IMG 02</div>
+    <div class="gdbox gdbox-3">IMG 03</div>
+    <div class="gdbox gdbox-4">IMG 04</div>
+
+    <div class="gdbox gdbox-5">IMG 05</div>
+    <div class="gdbox gdbox-6">IMG 06</div>
+    <div class="gdbox gdbox-7">IMG 07</div>
+    <div class="gdbox gdbox-8">IMG 08</div>
+
+  </div><!-- grid container ends here -->
+
+</section>
+
+<br>
+
+<div id="flexGrid" class="container-f">
+    <h2>Flex Gallery Section</h2><br>
+
+<div class="gal-flex-container">
+  <div class="gal-flex-item">Flex 01</div>
+  <div class="gal-flex-item">Flex 02</div>
+  <div class="gal-flex-item">Flex 03</div>
+  <div class="gal-flex-item">Flex 04</div>
+  <div class="gal-flex-item">Flex 05</div>
+  <div class="gal-flex-item">Flex 06</div>
+  <div class="gal-flex-item">Flex 07</div>
+  <div class="gal-flex-item">Flex 08</div>
+  <div class="gal-flex-item">Flex 09</div>
+
+</div>
+
+<div class="gal-flex-container">
+  <div class="gal-flex-item">Flex 01</div>
+  <div class="gal-flex-item">Flex 02</div>
+  <div class="gal-flex-item">Flex 03</div>
+  <div class="gal-flex-item">Flex 04</div>
+  <div class="gal-flex-item">Flex 05</div>
+  <div class="gal-flex-item">Flex 06</div>
+  <div class="gal-flex-item">Flex 07</div>
+  <div class="gal-flex-item">Flex 08</div>
+  <div class="gal-flex-item">Flex 09</div>
+</div>
+</div>
+
+
+
+<!-- comment out section flex!
 <section class="container">
   <h2>Flex Gallery Section</h2>
 
@@ -46,42 +125,26 @@
       <div class="box"></div>
       <div class="box"></div>
 
-  </div><!--container-flex ends here-->
+
+  </div>
+
 <br>
   <div class="container-flex">
 
       <div class="box"></div>
       <div class="box"></div>
       <div class="box"></div>
-
-  </div><!--container-flex ends here-->
+  </div>
   </section>
+  container-flex ends here  -->
+ <!--container-flex ends here-->
 
 
-<section class="container" style="padding-top: 20px">
-  <h2>Grid Gallery Section</h2>
 
-  <div class="grid-container">
-    <div class="gdbox gdbox-1"></div>
-    <div class="gdbox gdbox-2"></div>
-    <div class="gdbox gdbox-3"></div>
-    <div class="gdbox gdbox-4"></div>
 
-    <div class="gdbox gdbox-5"></div>
-    <div class="gdbox gdbox-6"></div>
-    <div class="gdbox gdbox-7"></div>
-    <div class="gdbox gdbox-8"></div>
-
-    <div class="gdbox gdbox-9"></div>
-    <div class="gdbox gdbox-10"></div>
-    <div class="gdbox gdbox-11"></div>
-    <div class="gdbox gdbox-12"></div>
-  </div><!-- grid container ends here -->
-
-</section>
-<br>
+<!-- comment out stacking gallery
 <section class="container">
-  <h2>Responsive Gallery Section</h2>
+  <h2>Stacking Gallery Section</h2>
   <div class="resGridRow">
 
     <div class="resGridCol">
@@ -89,7 +152,7 @@
       <img src="img/tvlApp1.jpg" alt="" style="width:100%">
       <img src="img/tvlApp1.jpg" alt="" style="width:100%">
       <img src="img/tvlApp1.jpg" alt="" style="width:100%">
-    </div><!-- grid col -->
+    </div><!-- grid col
 
 
   <div class="resGridCol">
@@ -97,7 +160,7 @@
     <img src="img/tvlApp1.jpg" alt="" style="width:100%">
     <img src="img/tvlApp1.jpg" alt="" style="width:100%">
     <img src="img/tvlApp1.jpg" alt="" style="width:100%">
-  </div><!-- grid col -->
+  </div><!-- grid col -
 
 
 <div class="resGridCol">
@@ -105,11 +168,11 @@
   <img src="img/tvlApp1.jpg" alt="" style="width:100%">
   <img src="img/tvlApp1.jpg" alt="" style="width:100%">
   <img src="img/tvlApp1.jpg" alt="" style="width:100%">
-</div><!-- grid col -->
+</div><!-- grid col -
 
-</div><!-- grid row -->
+</div><!-- grid row
 
-</section>
+</section> -->
 
 
 
@@ -152,5 +215,6 @@
 
 </footer>
 
+<script src="index.js"></script>
 </body>
 </html>
