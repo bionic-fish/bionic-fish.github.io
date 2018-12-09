@@ -457,7 +457,7 @@ properties */
 
 /* Gallery.html
   Mos-Grid layout properties */
-  #galleryHTML {
+  #galleryHTML, #introHTML, #hireHTML {
     font-family: 'Open Sans Condensed', sans-serif;
 
   }
