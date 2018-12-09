@@ -3,7 +3,7 @@
 This page is treated as a learning page and is constantly updating and adding new content.
 Please bare with me until I create the remaining content needed to fill the sections.
 
-A personal webpage for aspiring web developer Mr Christopher Harris. An online portfolio showcasing my aquired skills and knowledge using the last technologies relating to web development, HTML, CSS and JavaScript.
+A personal webpage for aspiring web developer Mr Christopher Harris. An online portfolio showcasing my aquired skills and knowledge using the lastest technologies relating to web development, HTML, CSS and JavaScript.
 
 Going for a more simplistic design than my first portfolio, see here: https://github.com/bionic-fish/bionic-fish.github.io 
 
@@ -40,6 +40,9 @@ Still deciding on a color scheme
 
 [Extras]
 Add CSS animations and transitions after portfolio work sections are complete
+
+[Issues] On an unimplemented gallery page, #gallery.html, I have ran into an issue in which the sticky nav bar is inheriting attributes and properties from the gallery containers. It doesnt effect the layout or positioning of either entities. However it does make the links inaccessable while an interactive gallery image is in a transition period. A work around for this could initially be solved with adding a z-index to bring the nav bar to the "front". But in doing so, creates another issue of having the nav bar contantly at the top of the webpage.
+I created the nav bar to come in under the welcoming banner on each page, not before. Therefore i am still persuing another design or implementation option to fix the issue.
 
 [Comments]
 // Enjoying recreating my portfolio to better enhance my current skills and provide a visual aid to potential recruiters looking for junior front end developers.
