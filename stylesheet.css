@@ -461,7 +461,12 @@ properties */
     font-family: 'Open Sans Condensed', sans-serif;
 
   }
-
+#mosGrid {
+  display: none;
+}
+#gridGallery {
+  display: none;
+}
 .grid-mos {
   padding: 20px 10px;
   height: 70vh;
@@ -493,7 +498,7 @@ properties */
 }
 .mos-item:hover {
   color: purple;
-  font-size: 25px;
+
   font-weight: bold;
 
   opacity: 1;
@@ -719,7 +724,7 @@ Sizing:  1x1, 2x2, 3x3, 2x3, 3x2  */
 
 
 /* Media queries for mobile */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 700px) {
   .features img {
     width: 100%;
     height: auto;
@@ -759,6 +764,15 @@ nav a {
 .resGridCol {
   flex: 100%;
   max-width: 100%;
+}
+.mosaic-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.mos-item {
+  width: 100%;
+  height: auto;
 }
 
 }

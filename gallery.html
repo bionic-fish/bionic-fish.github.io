@@ -14,7 +14,7 @@
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
 </head>
-<body id="galleryHTML" onload="showMos()">
+<body id="galleryHTML">
 
   <nav id="navbar" class="top-stick">
     <h1>C Harris Digital Content Creator & Web Developer</h1>
@@ -41,10 +41,10 @@
 
   <h2>Layout Options</h2>
 
-  <input id="mosBTN" onclick="showMos()" type="radio" value="submit"> Grid Moasaic Layout</input>
-  <input id="stnBTN" onclick="showSta()" type="radio" value="submit"> Standard Gallery</input>
+  <button onclick="showGallery()">ShowGrid Moasaic</button>
+  <button onclick="showGrid()">Show Grid Gallery</button>
+  <button onclick="showStandard()">Show Standard Gallery</button>
 
-  <input type="radio" value="response"> Slide Show Gallery</input>
 </section>
 
 <!-- Moasaic Grid Gallery
@@ -72,7 +72,7 @@
 
 <br>
 
-<section id="standardGrid" class="gdbox-container" style="padding-top: 20px">
+<section id="gridGallery" class="gdbox-container" style="padding-top: 20px">
   <h2>Grid Gallery Section</h2>
 
   <br>
@@ -92,103 +92,6 @@
   </div><!-- grid container ends here -->
 
 </section>
-
-<br>
-
-<div id="flexGrid" class="container-f">
-    <h2>Flex Gallery Section</h2><br>
-
-<div class="gal-flex-container">
-  <div class="gal-flex-item">Flex 01</div>
-  <div class="gal-flex-item">Flex 02</div>
-  <div class="gal-flex-item">Flex 03</div>
-
-  <div class="gal-flex-item">Flex 04</div>
-  <div class="gal-flex-item">Flex 05</div>
-  <div class="gal-flex-item">Flex 06</div>
-
-  <div class="gal-flex-item">Flex 07</div>
-  <div class="gal-flex-item">Flex 08</div>
-  <div class="gal-flex-item">Flex 09</div>
-
-</div>
-
-</div>
-
-
-
-<!-- comment out section flex!
-<section class="container">
-  <h2>Flex Gallery Section</h2>
-
-  <div class="container-flex">
-
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-
-
-  </div>
-
-<br>
-  <div class="container-flex">
-
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-  </div>
-  </section>
-  container-flex ends here  -->
- <!--container-flex ends here-->
-
-
-
-
-<!-- comment out stacking gallery
-<section class="container">
-  <h2>Stacking Gallery Section</h2>
-  <div class="resGridRow">
-
-    <div class="resGridCol">
-      <img src="img/tvlApp1.jpg" alt="" style="width:100%">
-      <img src="img/tvlApp1.jpg" alt="" style="width:100%">
-      <img src="img/tvlApp1.jpg" alt="" style="width:100%">
-      <img src="img/tvlApp1.jpg" alt="" style="width:100%">
-    </div><!-- grid col
-
-
-  <div class="resGridCol">
-    <img src="img/tvlApp1.jpg" alt="" style="width:100%">
-    <img src="img/tvlApp1.jpg" alt="" style="width:100%">
-    <img src="img/tvlApp1.jpg" alt="" style="width:100%">
-    <img src="img/tvlApp1.jpg" alt="" style="width:100%">
-  </div><!-- grid col -
-
-
-<div class="resGridCol">
-  <img src="img/tvlApp1.jpg" alt="" style="width:100%">
-  <img src="img/tvlApp1.jpg" alt="" style="width:100%">
-  <img src="img/tvlApp1.jpg" alt="" style="width:100%">
-  <img src="img/tvlApp1.jpg" alt="" style="width:100%">
-</div><!-- grid col -
-
-</div><!-- grid row
-
-</section> -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <footer class="split">
   <div class="ft-gd1 signiture slide-left">
