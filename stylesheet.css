@@ -540,7 +540,7 @@ properties */
 }
 .five {
   background-image: url("img/gallery/gal-item-01.JPG");
-  background-position: top left;
+  background-position: top right;
   background-size: cover;
   opacity: 0.6;
 
@@ -567,7 +567,17 @@ properties */
 }
 .eight {
   background-image: url("img/dashJS.JPG");
-  background-position: bottom left;
+  background-position: top left;
+  background-size: cover;
+  opacity: 0.6;
+
+  transition-property: all ease;
+  transition-duration: 2s;
+
+}
+.nine {
+  background-image: url("img/blog-post-progess.JPG");
+  background-position: bottom right;
   background-size: cover;
   opacity: 0.6;
 
