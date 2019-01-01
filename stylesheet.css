@@ -387,20 +387,18 @@ properties */
 }
 /* FOOTER 2X2 GRID LAYOUT */
 .split {
-  /* display: flex;
-  flex-wrap: wrap;
-  flex-direction: row; */
+
   background-color: #000;
   text-align: center;
   position: fixed;
   bottom: 0;
   width: 100%;
-  max-height: 20vh;
+  max-height: 10vh;
   color: #fff;
 
 }
 .footer-flex {
-  height: 200px;
+
   display: block;
   width: 100%;
   border: 10px solid #fff;
@@ -416,15 +414,18 @@ properties */
 /* div class = animate-bk */
 .animate-bk {
   /* position: relative; */
-  max-width: 150px;
-  max-height: 150px;
+  max-width: 75px;
+  max-height: 75px;
+
   background: #000;
   animation-name: footer-animate;
-  animation-duration: 4s;
+  animation-duration: 2.9s;
   animation-iteration-count: infinite;
   animation-fill-mode: both;
 
   margin: auto;
+  justify-content: center;
+  align-items: center;
 
 }
 @keyframes footer-animate {
@@ -435,60 +436,9 @@ properties */
   100% {background-color: purple; border-radius: 50% 50% 50% 50%;}
 }
 
-/* .split {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  position: relative;
-  padding: 10px;
-  clear: both;
-} */
-/* .ft-item1 {
-  grid-column-start: 1;
-  grid-column-end: 1;
-  background: #fff;
-  text-align: center;
-  padding-top: 20px;
-}
-.ft-item2 {
-  grid-column-start: 2;
-  grid-column-end: 2;
-  background: #000;
-  border-radius: 50px;
-  text-align: center;
-  padding-top: 20px;
-}
-.ft-item3 {
-  grid-column-start: 1;
-  grid-column-end: 1;
-  grid-row-start: 2;
-  background: #000;
-  color: #fff;
-  text-align: center;
-  padding-top: 20px;
-  border-radius: 50px;
-}
 
-.ft-gd4 {
-  grid-column-start: 2;
-  grid-column-end: 2;
-  text-align: center;
-  grid-row-start: 2;
-  padding-top: 20px;
-} */
 /* FOOTER child elements */
 
-.links a {
-  color: #fff;
-  text-decoration: none;
-  padding: 20px;
-  font-size: 24px;
-}
-.active {
-  text-decoration: underline;
-  text-decoration-style: double;
-  color: purple;
-}
 .icons {
   font-size: 25px;
   text-align: center;
@@ -496,7 +446,7 @@ properties */
 }
 
 .fa {
-  padding: 20px;
+  padding-bottom: 100px;
   font-size: 30px;
   width: 50px;
   text-align: center;
