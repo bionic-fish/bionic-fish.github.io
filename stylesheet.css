@@ -397,7 +397,7 @@ properties */
   width: 100%;
   max-height: 20vh;
   color: #fff;
-  
+
 }
 .footer-flex {
   height: 200px;
@@ -408,7 +408,7 @@ properties */
 
 /* .footer-flex {
   background-color: lightpink;
-  
+
  max-height: 400px;
   width: 100%;
 } */
@@ -423,9 +423,9 @@ properties */
   animation-duration: 4s;
   animation-iteration-count: infinite;
   animation-fill-mode: both;
-  
+
   margin: auto;
-  
+
 }
 @keyframes footer-animate {
   0% { background-color: purple; border-radius: 0 0 0 0;}
@@ -553,7 +553,7 @@ properties */
 
 /* Grid mosaic items */
 .one {
-
+  background-image: url("img/blog-progress.JPG");
   background-position: top left;
   background-size: cover;
   opacity: 0.6;
@@ -614,6 +614,16 @@ properties */
 
   transition-property: all ease;
   transition-duration: 2s;
+}
+.eight {
+  background-image: url("img/dashJS.JPG");
+  background-position: bottom left;
+  background-size: cover;
+  opacity: 0.6;
+
+  transition-property: all ease;
+  transition-duration: 2s;
+
 }
 /* Grid-mos Child elements
 Classes: smal, medium, large, wide and tall
