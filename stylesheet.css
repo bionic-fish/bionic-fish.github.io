@@ -506,7 +506,7 @@ properties */
   background-image: url("img/blog-progress.JPG");
   background-position: top left;
   background-size: cover;
-  opacity: 0.6;
+  opacity: 0.7;
 
   transition-property: all ease;
   transition-duration: 2s;
@@ -515,7 +515,7 @@ properties */
   background-image: url("img/gallery/gal-item-02.JPG");
   background-position: top left;
   background-size: cover;
-  opacity: 0.6;
+  opacity: 0.7;
 
   transition-property: all ease;
   transition-duration: 2s;

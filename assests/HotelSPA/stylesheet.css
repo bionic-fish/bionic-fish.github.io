@@ -138,3 +138,25 @@ section h1, section h2 {
   font-size: 36px;
   top: -50%;
 }
+
+img {
+  margin: auto;
+}
+/* media queries for mobile */
+@media screen and (max-width: 450px) {
+  .loginBox {
+    padding-top: 15px;
+    width: 100%;
+    height: fit-content;
+    background: #000;
+    color: #fff;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+  }
+  img {
+    margin: 10px;
+  }
+
+
+}
