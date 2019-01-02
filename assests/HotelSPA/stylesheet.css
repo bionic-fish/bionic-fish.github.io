@@ -90,13 +90,21 @@ h1 {
 nav {
   background: #000;
   color: #fff;
+  width: 100%;
   text-align: center;
   font-family: 'Raleway', sans-serif;
+ 
+  
+}
+nav ul {
+  margin: auto;
 }
 nav li {
   list-style-type: none;
   padding: 10px;
-  margin: 0 10px;
+  
+ 
+  
 }
 nav li:hover {
   color: blue;
@@ -142,9 +150,16 @@ section h1, section h2 {
 img {
   margin: auto;
 }
+footer {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  /* margin: auto; */
+}
 /* media queries for mobile */
 @media screen and (max-width: 450px) {
   .loginBox {
+ 
     padding-top: 15px;
     width: 100%;
     height: fit-content;
@@ -153,6 +168,9 @@ img {
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
     text-align: center;
+  }
+  .avatar {
+    display: none;
   }
   img {
     margin: 10px;
