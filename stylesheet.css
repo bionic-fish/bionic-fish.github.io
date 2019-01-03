@@ -42,9 +42,6 @@ h1, h2, h3 {
   position: fixed;
   top: 0;
   width: 100%;
-
-
-
 }
 .sticky {
   position: fixed;
@@ -56,8 +53,14 @@ color: #fff;
 font-size: 20px;
 display: block;
 z-index: 100;
-
-
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+.flex a {
+  margin: auto;
 }
 
 /* animation of heading */
@@ -65,7 +68,7 @@ z-index: 100;
   width: 100%;
   overflow: hidden;
 }
-.hero-sub h1, .hero-sub h2 {
+.hero-sub h1 {
   animation: slide-left 3s;
 }
 @keyframes slide-left {
@@ -99,7 +102,6 @@ z-index: 100;
   transform: translate(-50%, -50%);
   font-family: 'Raleway', sans-serif;
 }
-
 .hero-sub {
   background-image: url("img/alphine-bk.jpg");
   height:50vh;
@@ -116,7 +118,9 @@ z-index: 100;
   font-size: 50px;
   text-shadow: 3px 2px grey;
 }
+/* welcoming banner ends here */
 
+/*SECTION personal work properties */
 /* SECTION main */
 #main {
   background-image: linear-gradient(to bottom, grey, #fff);
@@ -135,21 +139,12 @@ z-index: 100;
  h2 {
   text-decoration: underline;
   font-size: 35px;
-  /*
-  color: #e191fd;
-*/
 }
 
-/* main button for gallery view */
-#main button {
-  height: 125px;
-  width: 250px;
-}
-
-/*SECTION work [class] properties */
+/* columns used for desktop layout of created 
+    web content and comments */
 .col {
   float: left;
-
   width: 50%;
   padding-top: 10px;
   padding-bottom: 30px;
@@ -157,24 +152,23 @@ z-index: 100;
   align-items: center;
   align-content: center;
   justify-content: center;
-
 }
-
 .col img {
   width: 100%;
   height: 33.3%;
 }
-
+.preview {
+  height: 400px;
+  width: 550px;
+  max-width: 960px;
+}
 .work p {
   font-size: 25px;
   padding: 10px;
-
 }
 .work h3 {
   animation: slide-right 5s ease-in;
-
 }
-
 @keyframes slide-right {
   from {
     margin-right: 100%;
@@ -186,6 +180,24 @@ z-index: 100;
   }
 }
 
+/* Index.html styles ends here */
+
+/* Gallery.html styles begins here */
+.container {
+  height: 30vh;
+}
+.box {
+  background-color: darkcyan;
+  height: 100px;
+  width: 150px;
+  margin: auto;
+}
+/* Gallery.html styles ends here */
+
+/* Hire.html styles begins here */
+
+
+/* Hire.html styles ends here */
 
 
 .grid {
@@ -226,29 +238,8 @@ FLEX Section - Flex Direction = Column
 
   background-image: linear-gradient(to bottom, #000, #fff );
 }
-/* SECTION features & functions */
 
-.features {
-  margin-top: 25px;
-  padding: 10px;
-
-}
-.features img {
-  width: 50%;
-  max-height: 400px;
-}
-.features-container {
-  margin: auto;
-  max-height: 500px;
-  width: 100%;
-
-}
-.features-container h2 {
-  color: purple;
-  padding-top: 50px;
-
-}
-#feature-animation {
+/* #feature-animation {
 
   margin: auto;
   height: 200px;
@@ -267,52 +258,8 @@ FLEX Section - Flex Direction = Column
   50% {background-color: grey; border-radius: 50% 50% 0 0;}
   75% {background-color: darkgrey; border-radius: 50% 50% 50% 0;}
   100% {background-color: #000; border-radius: 50% 50% 50% 50%;}
-}
+} */
 
-  #box {
-    background: #fff;
-    color: #000;
-    height: 200px;
-    max-height: 500px;
-    width: 250px;
-    position: relative;
-    margin: auto;
-
-
-    transition-property: background, border-radius, transform;
-    transition-duration: 3s;
-
-  }
-
-  #box:hover {
-    background: #000;
-    border-radius: 50%;
-    color: #fff;
-    transform: rotateY(180deg);
-  }
-#box h2 {
-  padding-top: 50px;
-}
-#button {
-  margin: auto;
-  height: 200px;
-  max-height: 500px;
-  width: 250px;
-
-  text-align: center;
-  transition-property: all;
-  transition-duration: 4s;
-}
-#button h2 {
-  margin: auto;
-  padding: 10px;
-}
-
-#button:hover {
-  background: black;
-  color: white;
-  border: 1px solid purple;
-}
 /* HIRE.HTML
  id=MAPS */
 #maps {
@@ -341,21 +288,6 @@ iFrame class="preview" */
   padding: 10px;
   margin: auto;
 }
-/* Gallery.html
-properties */
-.container {
-  text-align: center;
-  margin: 10px 10px;
-
-
-  /*max-height: 500px;*/
-
-
-}
-
-
-
-
 
 
 /* Responsive Grid section */
@@ -374,11 +306,7 @@ properties */
   margin-top: 8px;
   vertical-align: middle;
 }
-.preview {
-  height: 400px;
-  width: 550px;
-  max-width: 960px;
-}
+
 
 .-emulate-preview {
   width: 100%;
@@ -390,26 +318,13 @@ properties */
 
   background-color: #000;
   text-align: center;
-  position: fixed;
-  bottom: 0;
+ 
   width: 100%;
-  max-height: 10vh;
+  
   color: #fff;
+  margin: auto;
 
 }
-.footer-flex {
-
-  display: block;
-  width: 100%;
-  border: 10px solid #fff;
-}
-
-/* .footer-flex {
-  background-color: lightpink;
-
- max-height: 400px;
-  width: 100%;
-} */
 
 /* div class = animate-bk */
 .animate-bk {
@@ -440,15 +355,30 @@ properties */
 /* FOOTER child elements */
 
 .icons {
-  font-size: 25px;
+  /* font-size: 25px; */
   text-align: center;
   padding: 10px;
+  margin: auto;
+  /* width: 50%; */
+
+  animation-name: icons-animate;
+  animation-duration: 2.9s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+@keyframes icons-animate {
+  0% { color: purple; border-radius: 0 0 0 0;}
+  25% {color: lightpink; border-radius: 50% 0 0 0;}
+  50% { color: red; border-radius: 50% 50% 0 0;}
+  75% {color: rebeccapurple; border-radius: 50% 50% 50% 0;}
+  100% {color: purple; border-radius: 50% 50% 50% 50%;}
 }
 
 .fa {
-  padding-bottom: 100px;
+  
   font-size: 30px;
-  width: 50px;
+  width: 30px;
   text-align: center;
   text-decoration: none;
   color: white;
@@ -464,8 +394,7 @@ properties */
 
 .grid-mos {
   padding: 20px 10px;
-  height: 70vh;
-
+  height: 85vh;
 
 }
 .mosaic-container {
@@ -611,86 +540,9 @@ Sizing:  1x1, 2x2, 3x3, 2x3, 3x2  */
 }
 
 
-/* Gallery.html Grid layout properties */
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  grid-gap: 10px;
-
-  height: 100%;
-}
-.gdbox {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #000;
-  color: #fff;
-  height: 100px;
-  width: 200px;
-
-
-}
-
-.gdbox-1 {
-  background-image: url("img/tvlApp1.JPG");
-  background-position: center;
-  background-size: cover;
-  grid-column-start: 1;
-  grid-row-start: 1; */
-}
-.gdbox-2 {
-  background-image: url("img/icPreview-001.JPG");
-  background-position: center;
-  background-size: cover;
-  grid-column-start: 2;
-  grid-row-start: 1;
-}
-.gdbox-3 {
-  background-image: url("img/coffeePreview-002.JPG");
-  background-position: center;
-  background-size: cover;
-  grid-column-start: 3;
-  grid-row-start: 1;
-}
-.gdbox-4 {
-  background-image: url("img/reactjs-emulate.JPG");
-  background-position: center;
-  background-size: cover;
-  grid-column-start: 4;
-  grid-row-start: 1;
-}
-.gdbox-5 {
-  grid-column-start: 1;
-  grid-row-start: 2;
-}
-.gdbox-6 {
-  grid-column-start: 2;
-  grid-row-start: 2;
-}
-.gdbox-7 {
-  grid-column-start: 3;
-  grid-row-start: 2;
-}
-.gdbox-8 {
-  grid-column-start: 4;
-  grid-row-start: 2;
-}
-.gdbox-9 {
-  grid-column-start: 1;
-  grid-row-start: 3;
-}
-.gdbox-10 {
-  grid-column-start: 2;
-  grid-row-start: 3;
-}
-.gdbox-11 {
-  grid-column-start: 3;
-  grid-row-start: 3;
-}
-.gdbox-12 {
-  grid-column-start: 4;
-  grid-row-start: 3;
+/* Gallery Mock ups + accomodating links */
+#hotel-box {
+  background: url(img/tvlApp1.JPG);
 }
 
 /* Gallery.html
@@ -739,7 +591,9 @@ Sizing:  1x1, 2x2, 3x3, 2x3, 3x2  */
 
 
 /* Media queries for mobile */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 500px) {
+
+
   .features img {
     width: 100%;
     height: auto;
@@ -761,26 +615,11 @@ img {
   margin-top: 20px;
 
 }
-.des-col {
-  width: 100%;
-
-}
-/* .split {
-  display: block;
-  height: 100px;
-  width: 100%;
-  background-color: #000;
-  color: #fff;
-
-} */
-nav a {
-  display: block;
-}
-.gdbox, .box {
+/* .gdbox, .box {
   display: block;
   width: 100%;
   max-width: 100%;
-}
+} */
 .resGridCol {
   flex: 100%;
   max-width: 100%;
@@ -793,7 +632,11 @@ nav a {
 .mos-item {
   width: 100%;
   height: 25vh;
-  margin: 10px;
+  
+}
+.flex {
+  display: block;
+  width: 100%;
 }
 
 }
