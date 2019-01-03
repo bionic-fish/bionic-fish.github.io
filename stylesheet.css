@@ -3,7 +3,6 @@ font-family: 'Cutive Mono', monospace; [MAIN HEADINGS H1-H3]
 font-family: 'Pompiere', cursive; [SUB HEADS + <P> elements]
 */
 /* Global Atts */
-
 * {
 margin: 0;
 padding: 0;
@@ -57,7 +56,7 @@ z-index: 100;
 .flex {
   display: flex;
   flex-wrap: wrap;
-  margin: auto;
+  
 }
 .flex a {
   margin: auto;
@@ -183,9 +182,6 @@ z-index: 100;
 /* Index.html styles ends here */
 
 /* Gallery.html styles begins here */
-.container {
-  height: 30vh;
-}
 .box {
   background-color: darkcyan;
   height: 100px;
@@ -320,7 +316,7 @@ iFrame class="preview" */
   text-align: center;
  
   width: 100%;
-  
+ 
   color: #fff;
   margin: auto;
 
@@ -394,8 +390,7 @@ iFrame class="preview" */
 
 .grid-mos {
   padding: 20px 10px;
-  height: 85vh;
-
+  /* height: 85vh; */
 }
 .mosaic-container {
   display: grid;
@@ -405,8 +400,6 @@ iFrame class="preview" */
 
   height: 100%;
   width: 100%;
-
-
 }
 .mos-item {
 
@@ -579,19 +572,26 @@ Sizing:  1x1, 2x2, 3x3, 2x3, 3x2  */
 
 
 
-/* Media queries for desktop between 800px & 1000px */
+/* Media queries for desktop between 800px & 1000px
 @media screen and (max-width: 1100px) {
   .emulate-preview {
     width: 100%;
     margin: auto;
   }
+} */
+
+/* media queries for desktop gallery */
+@media screen and (min-width: 800px) {
+  .grid-mos {
+    padding: 20px 10px;
+    height: 85vh;
+  }
 }
 
 
 
-
 /* Media queries for mobile */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
 
 
   .features img {
@@ -607,7 +607,8 @@ img {
 }
 .col {
   width: 100%;
-  display: inline;
+  height: auto;
+  display: block;
 }
 .container-flex {
   display: block;
@@ -615,11 +616,7 @@ img {
   margin-top: 20px;
 
 }
-/* .gdbox, .box {
-  display: block;
-  width: 100%;
-  max-width: 100%;
-} */
+
 .resGridCol {
   flex: 100%;
   max-width: 100%;
@@ -631,12 +628,21 @@ img {
 }
 .mos-item {
   width: 100%;
-  height: 25vh;
+  height: 15em;
+  margin: auto;
   
 }
 .flex {
-  display: block;
+  bottom: 0;
   width: 100%;
+  text-align: center;
+  
+}
+footer {
+  
+  position: relative;
+  bottom: 0;
+  text-align: center;
 }
 
 }
