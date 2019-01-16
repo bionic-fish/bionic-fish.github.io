@@ -118,23 +118,24 @@ h3 {
     color: #fff;
 }
 /* image positioning and insertion */
-.box {
-    height: 350px;
-    width: 100%;
-    background-position: center;
-    background-size: contain;
-    margin: auto;
-    background: #333;
-}
-.box__animate {
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
 
-}
 img {
     height: auto;
     width: 100%;
+}
+/* .portrait__container {
+    border-radius: 50%;
+    
+    max-width: 250px;
+    max-height: 250px;
+} */
+.portrait {
+    border-radius: 50%;
+    border: 10px solid rgb(43, 201, 153);
+    /*  */
+    margin: auto;
+    max-width: 250px;
+    max-height: 250px;
 }
 
 /* maps */
@@ -166,9 +167,6 @@ section {
 
 /* tickets contact info */
 .tickets {
-    /* height: 50px; */
-    /* width: 90%; */
-    /* border: 2px solid #333; */
     border-radius: 5px 5px;
     margin: 8px;
     padding: 10px;
@@ -185,8 +183,20 @@ section {
     color: #fff;
     text-decoration: none;
 }
+.box {
+    height: 350px;
+    width: 100%;
+    background-position: center;
+    background-size: contain;
+    margin: auto;
+    background: #333;
+}
+.box__animate {
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
 
-
+}
 
 /* personal projects box backgrounds */
 .box__medical {

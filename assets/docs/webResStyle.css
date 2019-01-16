@@ -12,6 +12,14 @@ body {
   margin: 0 auto;
   /* text-align: center; */
 }
+.portrait {
+  border-radius: 50%;
+  border: 10px solid #fff;
+  /*  */
+  margin: auto;
+  max-width: 250px;
+  max-height: 250px;
+}
 .r-heading {
   text-align: center;
   text-decoration: underline;
