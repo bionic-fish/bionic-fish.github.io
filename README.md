@@ -1,48 +1,43 @@
 # bionicfish.github.io
 
-This page is treated as a learning page and is constantly updating and adding new content.
-Please bare with me until I create the remaining content needed to fill the sections.
-
 A personal webpage for aspiring web developer Mr Christopher Harris. An online portfolio showcasing my aquired skills and knowledge using the lastest technologies relating to web development, HTML, CSS and JavaScript.
 
-Going for a more simplistic design than my first portfolio, see here: https://github.com/bionic-fish/bionic-fish.github.io 
+I intend to develop a more simplistic design than my first portfolio, see here:https://bionic-fish.github.io/old-port/
 
-Displaying the same banner / introduction image and similar heading,
+This will entail a colaboration of current projects relating to web development. 
 
-I developed a sticky navigation bar following W3schools' method, that displays on scrolling past the banner.
+[LAYOUT]
 
-Personal Work Section 
-- Mobile display content as block, width 100%
--Desktop display content as floats
+  [Home.html]
 
-Emulation Work Section
-- Mobile display content as block, width 100%
-- Desktop display content as flex, produce 3 pieces of content to fill. [Emulate ReactJS, Emulate GoogleMaps, Emulate Netflix Browser]
+Small introduction utilizing the animated.js library to create some minimalistic and sleek animations that convey the content displayed to the user.
 
-Functions Work Section
-- Mobile display content as block, width 100%
-- Desktop display content as block, provide max width+height, keep simplistic list view for ease of viewing
+Personal projects section [websites] via a case study view. This link to the case study provided under each project includes information regarding the selected project, my development & design processes aswell as testing and debugging the websites.
 
-Footer
-- Mobile display content as block, width 100%
-- Desktop display content as 2x2 grid element. Provide offset color combination, add additonal social icons on request
+Quick bio, software and technology skills.
 
-[UPDATES]
-Design and develop the remaining pieces of content to fill personal portfolio. 
-Add 
-[mobile] Display flex content as 100% width, scroll to view next piece of work
+Link to development gallery eg. Projects.html -->
 
-[desktop] Display flex content as automatic slideshow, showcasing current work in the flex list
+Contact Section
+Google Maps API
+Digigtal Profile Buttons = [git, linkedIn, google]
+Recruitment = [digital resume, pdf resume]
+
+Footer section displaying page is hosted by GitHub pages.
+
+  [Projects.html]
+
+Small introduction utilizing the animated.js library to create some minimalistic and sleek animations that convey the content displayed to the user.
+
+JavaScript projects section [apps + web apps] displayed via a flexbox layout. Links to each application provided inside the app panel. All repositories are hosted via GitHub pages.
+
+Developed By Christopher Harris | 2019
 
 
-[Color Scheme]
-Still deciding on a color scheme
 
-[Extras]
-Add CSS animations and transitions after portfolio work sections are complete
 
-[Issues] On an unimplemented gallery page, #gallery.html, I have ran into an issue in which the sticky nav bar is inheriting attributes and properties from the gallery containers. It doesnt effect the layout or positioning of either entities. However it does make the links inaccessable while an interactive gallery image is in a transition period. A work around for this could initially be solved with adding a z-index to bring the nav bar to the "front". But in doing so, creates another issue of having the nav bar contantly at the top of the webpage.
-I created the nav bar to come in under the welcoming banner on each page, not before. Therefore i am still persuing another design or implementation option to fix the issue.
+
+
 
 [Comments]
 // Enjoying recreating my portfolio to better enhance my current skills and provide a visual aid to potential recruiters looking for junior front end developers.
