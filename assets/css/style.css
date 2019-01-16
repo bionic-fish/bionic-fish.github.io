@@ -9,7 +9,7 @@ body {
     font-family: 'Harmattan', sans-serif;
     /* height: 100%;
     width: 100%; */
-    
+
 }
 
 /* global props | case buttons */
@@ -76,7 +76,7 @@ h3 {
     border-width: 8px;
     color: rgb(43, 201, 153);
     /* font-size: 1.2em; */
-    
+
 }
 .header .fas {
     color: rgb(43, 201, 153);
@@ -93,7 +93,7 @@ h3 {
     text-align: center;
     margin-bottom: 10px;
     color: #fff;
-    
+
 }
 .banner i {
     padding: 10px;
@@ -110,9 +110,9 @@ h3 {
 }
 .banner h1 {
     text-decoration: underline;
-    
+
 }
-.banner h1, 
+.banner h1,
 .banner h2 {
     width: 100%;
     color: #fff;
@@ -125,14 +125,13 @@ img {
 }
 /* .portrait__container {
     border-radius: 50%;
-    
+
     max-width: 250px;
     max-height: 250px;
 } */
 .portrait {
     border-radius: 50%;
     border: 10px solid rgb(43, 201, 153);
-    /*  */
     margin: auto;
     max-width: 250px;
     max-height: 250px;
@@ -230,11 +229,11 @@ section {
     justify-content: center;
     align-items: center;
     margin: 10px auto;
-    
+
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    
+
 }
 .box__js-projects h5 {
     background: rgba(255, 255, 255, 0.3);
@@ -248,7 +247,7 @@ section {
     text-decoration: none;
     width: 100%;
     transition: all 1s ease-in;
-    
+
 }
 .box__js-projects a:hover {
     border-bottom: 4px solid rgb(43, 201, 153);
@@ -282,7 +281,7 @@ section {
     display: block;
     height: 100%;
     width: 100%;
-    
+
 }
 .mos-item {
     width: 100%;
@@ -300,7 +299,7 @@ section {
     background-position: top left;
     background-size: cover;
     /* opacity: 0.7; */
-  
+
     transition-property: all ease;
     transition-duration: 2s;
   }
@@ -309,7 +308,7 @@ section {
     background-position: top left;
     background-size: cover;
     /* opacity: 0.7; */
-  
+
     transition-property: all ease;
     transition-duration: 2s;
   }
@@ -318,7 +317,7 @@ section {
     background-position: top left;
     background-size: cover;
     /* opacity: 0.6; */
-  
+
     transition-property: all ease;
     transition-duration: 2s;
   }
@@ -327,7 +326,7 @@ section {
     background-position: top left;
     background-size: cover;
     /* opacity: 0.6; */
-  
+
     transition-property: all ease;
     transition-duration: 2s;
   }
@@ -336,7 +335,7 @@ section {
     background-position: top right;
     background-size: cover;
     /* opacity: 0.6; */
-  
+
     transition-property: all ease;
     transition-duration: 2s;
   }
@@ -345,7 +344,7 @@ section {
     background-position: bottom right;
     background-size: cover;
     /* opacity: 0.6; */
-  
+
     transition-property: all ease;
     transition-duration: 2s;
   }
@@ -354,7 +353,7 @@ section {
     background-position: top left;
     background-size: cover;
     /* opacity: 0.6; */
-  
+
     transition-property: all ease;
     transition-duration: 2s;
   }
@@ -363,30 +362,30 @@ section {
     background-position: bottom right;
     background-size: cover;
     /* opacity: 0.6; */
-  
+
     transition-property: all ease;
     transition-duration: 2s;
-  
+
   }
   .nine {
     background-image: url("../img/grid-gal/grid-item-9.JPG");
     background-position: bottom right;
     background-size: cover;
     /* opacity: 0.6; */
-  
+
     transition-property: all ease;
     transition-duration: 2s;
-  
+
   }
   .ten {
     background-image: url("../img/grid-gal/grid-item-10.JPG");
     background-position: top right;
     background-size: cover;
     /* opacity: 0.6; */
-  
+
     transition-property: all ease;
     transition-duration: 2s;
-  
+
   }
 
 /* media queries for desktop */
@@ -399,7 +398,7 @@ section {
     .box__animate {
         background-position: top;
         background-size: cover;
-        transition: all 3.5s ease; 
+        transition: all 3.5s ease;
     }
     .box__animate:hover {
         background-position: bottom;
@@ -413,7 +412,7 @@ section {
         background-position: center;
         background-attachment: scroll;
         background-repeat: no-repeat;
-       
+
     }
     img {
         height: 450px;
@@ -426,7 +425,7 @@ section {
         border-width: 8px;
         color: rgb(43, 201, 153);
         font-size: 1.2em;
-        
+
     }
     .flex {
         display: flex;
@@ -442,8 +441,8 @@ section {
         height: 300px;
         /* border: 1px solid rgba(255, 149, 10, 0.9); */
     }
-  
-   
+
+
     .section__container {
         max-width: 900px;
         margin: auto;
@@ -512,7 +511,7 @@ section {
         color: #000;
         display:flex;
         justify-content: center;
-      
+
         transition-property: all ease;
         transition-duration: 2s;
         /* opacity: 0.6; */
@@ -523,8 +522,8 @@ section {
         font-weight: bold;
         opacity: 1;
       }
-      
-      
+
+
       /* Grid-mos Child elements
       Classes: smal, medium, large, wide and tall
       Sizing:  1x1, 2x2, 3x3, 2x3, 3x2  */
@@ -546,7 +545,7 @@ section {
         padding: 0;
         margin: 0;
       }
-      
+
       .wide {
         grid-row: span 2;
         grid-column: span 3;
@@ -559,6 +558,5 @@ section {
         padding: 0;
         margin: 0;
       }
-    
-}
 
+}
