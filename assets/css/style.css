@@ -7,27 +7,40 @@
 }
 body {
     font-family: 'Harmattan', sans-serif;
-    /* height: 100%;
-    width: 100%; */
+}
+/* global props | case buttons */
+#projects a,
+#galLink a,
+#blog a,
+#casestudy a {
+  background-color: #333;
+  border-radius: 10px;
+  border: none;
+  height: 100px;
+  width: 200px;
+  font-size: 25px;
+  margin: 10px auto;
+  padding: 10px;
+  transition: all 2s ease-in;
+
+  color: #fff;
+  text-decoration: none;
 
 }
-
-/* global props | case buttons */
-button {
+/* button {
     background-color: #333;
     border-radius: 5px 5px;
     border: none;
     height: 55px;
     width: 155px;
     margin: 10px;
-
     transition: all 2s ease-in;
-}
-button a {
-    color: #fff;
-    text-decoration: none;
-}
-button:hover {
+} */
+
+#projects a:hover,
+#galLink a:hover,
+#blog a:hover,
+#casestudy a:hover {
     background-color: rgb(43, 201, 153);
     text-decoration: underline;
 }
