@@ -43,12 +43,41 @@ body {
 #casestudy i {
     color: rgb(43, 201, 153);
 }
+/* Global props | images + position */
+/* image positioning and insertion */
+.box {
+    height: 350px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+    background: #333;
+}
+.box__animate {
+    background-position: center;
+    background-size: cover;
+    /* background-attachment: fixed; */
+
+}
+img {
+    height: auto;
+    width: 100%;
+}
+.portrait {
+    border-radius: 50%;
+    border: 10px solid rgb(43, 201, 153);
+    margin: auto;
+    max-width: 250px;
+    max-height: 250px;
+}
+
 /* global props | headings */
 h2 { /* section heading */
     text-decoration: underline;
+    letter-spacing: 3px;
 }
 h3 {
-    /* color: rgb(43, 201, 153); */
     text-decoration: underline;
     font-weight: bold;
 }
@@ -124,19 +153,9 @@ h3 {
     width: 100%;
     color: #fff;
 }
-/* image positioning and insertion */
 
-img {
-    height: auto;
-    width: 100%;
-}
-.portrait {
-    border-radius: 50%;
-    border: 10px solid rgb(43, 201, 153);
-    margin: auto;
-    max-width: 250px;
-    max-height: 250px;
-}
+
+
 /* maps */
 #maps {
     height: 400px;
@@ -175,25 +194,13 @@ section {
     color: #fff;
     text-decoration: none;
 }
-.box {
-    height: 350px;
-    width: 100%;
-    background-position: center;
-    /* background-size: cover; */
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin: auto;
-    background: #333;
-}
-.box__animate {
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-
-}
 
 
 
+
+
+
+/* projects.html JavaScript project props */
 
 .box__js-projects {
     border-radius: 15px;
@@ -347,15 +354,19 @@ section {
         background-size: auto;
     }
     .box {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        box-shadow:rgb(43, 201, 153) 15px 12px;
         max-width: 940px;
         width: 750px;
         height: 450px;
-        background-size: cover;
-        background-position: center;
-        background-attachment: scroll;
-        background-repeat: no-repeat;
+        
 
     }
+    
+    
     .box__js-projects {
         margin: 10px auto;
         max-width: 900px;
