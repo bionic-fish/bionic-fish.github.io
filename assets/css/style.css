@@ -357,8 +357,9 @@ section {
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
+        border: 1px solid lightslategray;
         border-radius: 10px;
-        box-shadow:rgb(43, 201, 153) 15px 12px;
+        /* box-shadow:rgb(43, 201, 153) 15px 12px; */
         max-width: 940px;
         width: 750px;
         height: 450px;
