@@ -31,6 +31,34 @@ section {
     background-position: center;
     background-size: cover;
 }
+.ball__med {
+    background: #000;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    height: 250px;
+    margin: 10px auto;  
+    width: 250px;
+}
+.box__med {
+    background: #000;
+    border-radius: 10px;
+    height: 250px;
+    margin: 10px auto;  
+    width: 90%;
+}
+.box__sml {
+    background: #000;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    height: 150px;
+    margin: 10px auto;  
+    width: 150px;
+}
+    
 /* global responsive images */
 img {
     height: auto;
@@ -132,7 +160,8 @@ h3 {
 #galLink a,
 #blog a,
 #casestudy a,
-#devWork a  {
+#devWork a,
+#comments a  {
   background-color: #333;
   border-radius: 10px;
   border: none;
@@ -150,7 +179,8 @@ h3 {
 #galLink a:hover,
 #blog a:hover,
 #casestudy a:hover,
-#devWork a:hover {
+#devWork a:hover,
+#comments a:hover {
     background-color: rgb(43, 201, 153);
     text-decoration: underline;
 }
@@ -163,9 +193,10 @@ h3 {
 /* project sections website icons */
 #projects .fab,
 #projects .far,
-#projects .fas {
+#projects .fas,
+#overview .far {
     color: rgb(43, 201, 153);
-    font-size: 16px;
+    font-size: 26px;
 }
 
 /* tickets contact info */
@@ -238,6 +269,15 @@ h3 {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+/* case-[project].html box images */
+.box__book1 {background-image: url("../img/case-study/bookmarkApp/js-icon.JPG");}
+.box__book2 {background-image: url("../img/case-study/bookmarkApp/js-input.JPG");}
+.box__book3 {background-image: url("../img/case-study/bookmarkApp/css-hover.JPG");}
+.box__bookdev {background-image: url("../img/case-study/bookmarkApp/develop.JPG");}
+.box__booktest {background-image: url("../img/case-study/bookmarkApp/testing.JPG");}
+
+
 /* Index.html box background images */
 /* personal projects box backgrounds */
 .box__medical {background-image: url("../img/box-Medical.JPG");}
