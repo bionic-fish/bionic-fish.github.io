@@ -8,62 +8,35 @@
 body {
     font-family: 'Harmattan', sans-serif;
 }
-/* global props | case buttons */
-#projects a,
-#galLink a,
-#blog a,
-#casestudy a {
-  background-color: #333;
-  border-radius: 10px;
-  border: none;
-  color: #fff;
-  font-size: 25px;
-  height: 100px;
-  margin: 10px auto;
-  padding: 10px;
-  text-decoration: none;
-  transition: all 2s ease-in;
-  width: 200px;
+section {
+    text-align: center;
 }
-/* gloabl props | case buttons : hover */
-#projects a:hover,
-#galLink a:hover,
-#blog a:hover,
-#casestudy a:hover {
-    background-color: rgb(43, 201, 153);
-    text-decoration: underline;
-}
-/* global props | font awesome icons */
-.fab,
-.far,
-.fas {
-    font-size: 26px;
-    color: #fff;
-}
-#casestudy i {
-    color: rgb(43, 201, 153);
+#maps {
+    width: 100%;
+    height: 350px;
 }
 /* Global props | images + position */
-/* image positioning and insertion */
+/* global box positioning props */
 .box {
     height: 350px;
     width: 100%;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    border-bottom: 1px solid #333;
     margin: auto;
     background: #333;
 }
 .box__animate {
     background-position: center;
     background-size: cover;
-    /* background-attachment: fixed; */
-
 }
+/* global responsive images */
 img {
     height: auto;
     width: 100%;
 }
+/* personal portrait props */
 .portrait {
     border-radius: 50%;
     border: 10px solid rgb(43, 201, 153);
@@ -71,7 +44,6 @@ img {
     max-width: 250px;
     max-height: 250px;
 }
-
 /* global props | headings */
 h2 { /* section heading */
     text-decoration: underline;
@@ -84,6 +56,7 @@ h3 {
 #contact h4 {
     text-align: left;
 }
+
 /* header + footer props */
 .header,
 .footer {
@@ -119,6 +92,8 @@ h3 {
 .left {float: left;}
 .right {float: right;
 }
+    
+
 /* index.html banner */
 .banner {
     clear: both;  /*clearfix for above span elements */
@@ -128,8 +103,6 @@ h3 {
     background: #333;
     text-align: center;
     margin-bottom: 10px;
-    
-
 }
 .banner i {
     padding: 10px;
@@ -138,15 +111,8 @@ h3 {
     font-size: 1.2em;
     transition: all 1s ease;
 }
-.banner i:hover {
-    padding: 10px;
-    color: rgb(43, 201, 153);
-    text-decoration: underline;
-    font-size: 1.8em;
-}
 .banner h1 {
     text-decoration: underline;
-
 }
 .banner h1,
 .banner h2 {
@@ -154,19 +120,46 @@ h3 {
     color: #fff;
 }
 
-
-
 /* maps */
-#maps {
+/* #maps {
     height: 400px;
     width: 100%;
     background: #333;
-}
-section {
-    text-align: center;
-    /* margin: auto; */
-}
+} */
 
+/* case buttons */
+#projects a,
+#galLink a,
+#blog a,
+#casestudy a,
+#devWork a  {
+  background-color: #333;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  font-size: 25px;
+  height: 100px;
+  margin: 10px auto;
+  padding: 10px;
+  text-decoration: none;
+  transition: all 2s ease-in;
+  width: 200px;
+}
+/* case buttons : interactive */
+#projects a:hover,
+#galLink a:hover,
+#blog a:hover,
+#casestudy a:hover,
+#devWork a:hover {
+    background-color: rgb(43, 201, 153);
+    text-decoration: underline;
+}
+/* global props | font awesome icons */
+#casestudy i {color: rgb(43, 201, 153);}
+.fab, .far, .fas {
+    font-size: 26px;
+    color: #fff;
+}
 /* project sections website icons */
 #projects .fab,
 #projects .far,
@@ -175,15 +168,12 @@ section {
     font-size: 16px;
 }
 
-
 /* tickets contact info */
 .tickets {
     border-radius: 5px 5px;
     margin: 8px;
     padding: 10px;
     background-color: #333;
-    /* margin: auto; */
-
     transition: all 1.5s;
 }
 .tickets:hover {
@@ -195,13 +185,11 @@ section {
     text-decoration: none;
 }
 
-
-
-
-
+/* #devWork .box {
+    height: 350px;
+} */
 
 /* projects.html JavaScript project props */
-
 .box__js-projects {
     border-radius: 15px;
     height: 200px;
@@ -211,17 +199,18 @@ section {
     justify-content: center;
     align-items: center;
     margin: 10px auto;
-
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 
 }
-.box__js-projects h5 {
-    background: rgba(255, 255, 255, 0.2);
-}
+
+
+.box__js-projects h5 {background: rgba(255, 255, 255, 0.2);}
+
 .box__js-projects h5,
-.box__js-projects a {
+.box__js-projects a
+{
     color: #FFF;
     font-size: 1.3em;
     text-shadow: 4px 2px rgb(43, 201, 153);
@@ -229,14 +218,10 @@ section {
     text-decoration: none;
     width: 100%;
     transition: all 1s ease-in;
-
 }
 .box__js-projects a:hover {
     border-bottom: 4px solid rgb(43, 201, 153);
 }
-
-
-
 
 /* case study page banners */
 .case__heading {
@@ -262,12 +247,21 @@ section {
 .box__gallery {background-image: url("../img/box-Gallery.JPG");}
 .box__project-blog {background-image: url("../img/project-blog.JPG");}
 
-/* projects.html box background for JavaScript Projects */
-/* box__[project] background */
-.box__clock {background-image: url('../img/box-clock.JPG');}
+/* projects.html box background images */
+/* javascript projects */
+.box__bookmark {background-image: url('../img/box-preview/bookmarkApp.JPG');}
 .box__weather {background-image: url('../img/box-weather.JPG');}
+
+
+.box__clock {background-image: url('../img/box-clock.JPG');}
+
 .box__futurama {background-image: url('../img/box-futurama.JPG');}
 .box__manager {background-image: url('../img/box-manager.JPG');}
+
+/* hosted websites */
+.box__material {background-image: url('../img/box-preview/materialize.JPG');}
+.box__holidayspecial {background-image: url('../img/box-preview/holidayspecial.JPG');}
+.box__gigabyte {background-image: url('../img/box-preview/gigabyte.JPG');}
 
 #blogProjects .box__js-projects {
     border-radius: 50%;
@@ -303,46 +297,8 @@ section {
     Grid photo gallery for devices over 960px in width,
     Animated div.box containers on hover or mouseover,
     Flexbox layout for JavaScript projects
-
 */
 @media screen and (min-width: 960px) {
-    /* global desktop props */
-    .banner {
-        margin: auto;
-        width: 100%;
-    }
-    .flex {
-        display: flex;
-        margin: auto;
-    }
-    .flex .box__js-projects {
-        width: 100%;
-    }
-    img {
-        height: 450px;
-        max-width: 940px;
-        width: 750px;
-    }
-    .section__container {
-        max-width: 900px;
-        margin: auto;
-    }
-    .section__projects {
-        width: 100%;
-        margin: auto;
-    }
-    /* Specific desktop elements */
-    .header a:hover {
-        border-bottom: 4px solid rgb(43, 201, 153);
-        border-width: 8px;
-        color: rgb(43, 201, 153);
-        font-size: 1.2em;
-    }
-    .tickets {
-    border: 2px solid #333;
-    padding: 10px;
-    
-    }
     /* personal projects box props */
     .box__animate {
         background-position: top;
@@ -359,38 +315,39 @@ section {
         background-repeat: no-repeat;
         border: 1px solid lightslategray;
         border-radius: 10px;
-        /* box-shadow:rgb(43, 201, 153) 15px 12px; */
         max-width: 940px;
         width: 750px;
         height: 450px;
-        
-
     }
-    
-    
+    #maps {
+        border: 1px solid lightslategray;
+        border-radius: 10px;
+        height: 470px;
+        width: 750px;
+        margin: 0 auto;
+    }
     .box__js-projects {
         margin: 10px auto;
         max-width: 900px;
         height: 300px;
     }
-       
-    /* Case Study, header + footer banner
-        Screenshots from created pages */
-    .case__heading {
-        height: 30vh;
-        background-attachment: fixed;
-        background-origin: border-box;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
+    img {
+        height: 450px;
+        max-width: 940px;
+        width: 750px;
     }
-    .case__bottom {
-        height: 30vh;
-        background-attachment: fixed;
-        background-origin: border-box;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
+
+    /* global desktop props */
+    .banner {
+        margin: auto;
+        width: 100%;
+    }
+    .flex {
+        display: flex;
+        margin: auto;
+    }
+    .flex .box__js-projects {
+        width: 100%;
     }
     .footer-left {
         float: left;
@@ -398,12 +355,34 @@ section {
     .footer-right {
         float: right;
     }
+    .section__container {
+        max-width: 900px;
+        margin: auto;
+    }
+    .section__projects {
+        width: 100%;
+        margin: auto;
+    }
+    
 
+    /* Specific desktop elements */
+    .header a:hover {
+        border-bottom: 4px solid rgb(43, 201, 153);
+        border-width: 8px;
+        color: rgb(43, 201, 153);
+        font-size: 1.2em;
+    }
+    .tickets {
+        border: 2px solid #333;
+        padding: 10px;
+    }
+    
+    
+   
+    
     /* Grid props 
-        Components:
-            .grid-item,
-            .mosaic-container,
-            .mos-item
+        Components: 
+        .grid-item .mosaic-container .mos-item
     */
     .grid {
         display: grid;
@@ -419,7 +398,6 @@ section {
         background-size: contain;
         background-position: center;
     }
-
     /* gallery.html [GRID Gallery] */
     .mosaic-container {
         display: grid;
@@ -428,8 +406,8 @@ section {
         grid-gap: 10px;
         height: 100%;
         width: 100%;
-      }
-      .mos-item {
+    }
+    .mos-item {
         align-items: center;
         color: #000;
         display:flex;
@@ -437,13 +415,13 @@ section {
         transition-property: all 2s ease;
         transition-duration: 2s;
         opacity: 0.5;
-      }
-      .mos-item:hover {
+    }
+    .mos-item:hover {
         background-position: center;
         transform: scale(1.1);
         z-index: 1000;
         opacity: 1;
-      }
+    }
     /* Grid mos-item hover props */
     .one,
     .three,
@@ -462,34 +440,53 @@ section {
     Classes: smal, medium, large, wide and tall
     Sizing:  1x1, 2x2, 3x3, 2x3, 3x2  */
     .small {
-    grid-row: span 1;
-    grid-column: span 1;
-    padding: 0;
-    margin: 0;
+        grid-row: span 1;
+        grid-column: span 1;
+        padding: 0;
+        margin: 0;
     }
     .medium {
-    grid-row: span 2;
-    grid-column: span 2;
-    padding: 0;
-    margin: 0;
+        grid-row: span 2;
+        grid-column: span 2;
+        padding: 0;
+        margin: 0;
     }
     .large {
-    grid-row: span 3;
-    grid-column: span 3;
-    padding: 0;
-    margin: 0;
+        grid-row: span 3;
+        grid-column: span 3;
+        padding: 0;
+        margin: 0;
     }
     .wide {
-    grid-row: span 2;
-    grid-column: span 3;
-    padding: 0;
-    margin: 0;
+        grid-row: span 2;
+        grid-column: span 3;
+        padding: 0;
+        margin: 0;
     }
     .tall {
-    grid-row: span 3;
-    grid-column: span 2;
-    padding: 0;
-    margin: 0;
+        grid-row: span 3;
+        grid-column: span 2;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Case Study, header + footer banner
+        Screenshots from created pages */
+    .case__heading {
+        height: 30vh;
+        background-attachment: fixed;
+        background-origin: border-box;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
+    .case__bottom {
+        height: 30vh;
+        background-attachment: fixed;
+        background-origin: border-box;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
     }
 
 }
