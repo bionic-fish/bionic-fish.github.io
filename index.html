@@ -16,147 +16,126 @@
 </head>
 <body>
 <!-- header --> 
-    <!-- mobile & tablet =  -->
-    <!-- desktop = -->
+    <!-- mobile & tablet = h3 float left, nav, float right -->
+    <!-- desktop = h3 float left, nav, float right -->
     <header class="header">
         <i class="fas fa-cube"></i>
         <span class="left"><h3> C D Harris</h3></span>
-
         <span class="right">
             <nav>
             <a href="index.html">home</a>
+            <a href="https://bionic-fish.github.io/cases.html">cases</a>
             <a href="projects.html">projects</a>
             </nav>
         </span>
     </header>
 
 <!-- banner -->
-    <!-- mobile & tablet = content center -->
-    <!-- desktop = content center-->
+    <!-- mobile & tablet = content center [animated paragraphs] -->
+    <!-- desktop = content center [animated paragraphs] -->
     <div class="banner">
         <div class="container">
+        <!-- animated heading element -->
         <h2 class=" animated flipInX delay-1s">Front-End Web Developer</h2>
-        <!-- animated paragraph elements -->
         <!-- slide in from the left of screen -->
-        <p class="animated slideInLeft delay-2s">Im Christopher, an enthusiastic web based programmer and digital content creator,
-        who is always on lookout for a new skill or language feature to learn in the field of web development & design.</p>
+        <p class="animated slideInLeft delay-2s">Im Christopher, an enthusiastic web based programmer, digital content creator,
+        hobbyist pc builder, and JavaScript specialist</p>
         <!-- slide in from the right of screen -->
-        <p class="animated slideInRight delay-2s">I have a high drive for obtaining knowledge relating to digital software and hardware
-        specification for development and design purposes.I welcome all to view the case studies below for an indepth look at my coding
-        practices and design and development techniques.</p>
+        <p class="animated slideInRight delay-2s">I welcome all to view a range of development & design cases for an indepth look at my coding practices and techniques</p>
         </div>
-    </div><!-- div banner ends here-->
+    </div><!-- div banner ends here -->
 
-<!-- sections introduction -->
+<!-- section introduction -->
     <!-- mobile & tablet = content center -->
     <!-- desktop = content center-->
     <section id="intro">
-        <h2>Introduction</h2>
         <div class="section__container">
-        <p>As a self taught web developer, I believe in developing clean and efficient code bases,
-        providing a mobile-first design mindset, but catering to desktop for
-        more intricate design patterns and layouts. Coupled together with my love
-        for learning new things, web development and design has becoming an amazing hobby,
-        being able to create from scratch beautiful and responsive designs, concepts and mockups.</p>
+                <h2>Introduction</h2>
+                <p>A self taught web developer, digital content creator & JavaScript application specialist. I have a high drive for
+                obtaining knowledge relating to digital software and hardware specification for development and design purposes.
+                Combined with intrepid research & analysis of current technology and software trends provides an exciting environment
+                to continuously develop new skills.</p>
         </div>
-    </section>
+    </section><!-- section intro ends here -->
 
-    <br><!-- line break between sections-->
-
-    <!-- projects section -->
-        <!-- mobile & tablet = responsive showcase img = div.box -->
-        <!-- desktop = large responsive showcase img = div.box; div.box animation-->
+<!-- projects section -->
+    <!-- mobile & tablet = responsive showcase img = div.box -->
+    <!-- desktop = large responsive showcase img = div.box; div.box animation-->
     <section id="projects">
-        <h2>Personal Projects</h2>
         <div class="section__container">
-            <p>Preview multiple personal projects for a brief insight into my development and design techniques, layout and positioning
-            properties of elements and design theory implementation. A case study link is provided at the bottom of each project preview.
-            All projects are hosted on Github Pages.</p>
-        
+            <h2>Personal Projects</h2>
+            <p>Preview personal projects for a brief insight into my development and design techniques, aswell as properties
+            of elements and design theory implementation. All projects are hosted on Github Pages.</p>
+            <br>
+            
             <!-- travel app preview -->
-            <div class="section__projects">
-                <div class="box box__animate box__travel"></div>
-                <br>
-                <h3>Travel App</h3>
+            <section class="casestudy">
                 <i class="fas fa-mountain"></i>
-                <p>My love for travel and exploring exciting parts of the world gave me the inspiration to develop a standard
-                travel app mock up website. This project helped develop a better understanding of the CSS property: flexbox.
-                By utilizing the flex layout, one can achieve a responsive design and layout for user multiple devices.</p>
-                <!-- link to case study for current project -->
-                <br><br>
-                <h4><a href="travel-app.html">Case Study</a><h4></h4>
-                <br><br>
-            </div><!-- section__projects ends here [travel] -->
+                <h3>Travel Brochure Website</h3>
+                <p>My obsession for travelling to exotic desitinations and exploring exciting & ancient parts of the world gave me the inspiration
+                to develop a travel brochure, depicting popular destinations and travel hot spots.</p>
+                <div class="box__med box__trvl1">
+                    <h4><a href="casestudy/case-travel.html">Case Study: Travel</a></h4>
+                </div>
+                <br>
+            </section><!-- sectioncasestudy ends here [travel] -->
 
             <!-- coffee hub preview -->
-            <div class="section__projects">
-                <div class="box box__animate box__coffee"></div>
-                <br>
-                <h3>Coffee Shop</h3>
+            <section class="casestudy">
                 <i class="fas fa-coffee"></i>
-                <p>This is a mock up of a local cafe based in Melbourne, Aus. As an avid coffee drinker and local cafe goer, I
-                thought it would be a great idea for a personal project. Combining my love for cafes and my keen interest in
-                web development. Developing this project enhanced my color theory skills and better understanding of layout
-                principals.</p>
-                <!-- link to case study for current project -->
-                <br><br>
-                <h4><a href="coffee-hub.html">Case Study</a></h4>
-                <br><br>
-            </div><!-- section__projects ends here [coffee] -->
-
-            <!-- medical app preview -->
-            <div class="section__projects">
-                <div class="box box__animate box__medical"></div>
+                <h3>Local Coffee Shop</h3>
+                <p> Combining my love for cafes and my keen interest in web development & design. Developed a mock up based cafe displaying all the 
+                information needed to walk into a cafe with your order, the total amount and extras available through the web page.
+                </p>
+                <div class="box__med box__coffee">
+                        <h4><a href="casestudy/case-coffee.html">Case Study: Coffee</a></h4>
+                </div>
                 <br>
-                <h3>Medical App</h3>
-                <i class="fas fa-heartbeat"></i>
-                <p>A long term invested personal project, for my sister who suffers from type 2 diabetes. This is mock up medical
-                website and accommodating application for monitoring diabetes in real time with the aid of a smartphone or
-                smart watch application.The application is still in a research & development stage, while the website is fully built.</p>
-                <!-- link to case study of project -->
-                <br><br>
-                <h4><a href="medical-app.html">Case Study</a><h4></h4>
-                <br><br>
-            </div><!-- section__projects ends here [medical] -->
+            </section>
 
-            <!-- tech hub preview -->
-            <div class="section__projects">
-                <div class="box box__animate box__tech"></div>
+            <!-- travel app preview -->
+            <!-- <section class="casestudy">
+                <i class="far fa-clock"></i>
+                <h3>Pomodoro Tracker</h3>
+                <p>Combining two beginner JavaScript projects, a real-time clock & a traditional to-do list, I devised a way to add
+                some extra features to create a functional Pomodoro task tracking application.</p>
+                <div class="box__med box__futurama">
+                    <h4><a href="casestudy/case-pomodoro.html">Case Study: Pomodoro</a></h4>
+                </div>
                 <br>
-                <h3>Tech Hub</h3>
-                <i class="fas fa-database"></i>
-                <p>The Technology Hub of Melbourne! A mock up technology website for displaying a company's products and services
-                in a clean and neat way. Developing this mock up gave insight into the margin: 0 auto property of CSS. Creating
-                clean centered block elements that make the page display exceptionally clean and eye pleasing.</p>
-                <!-- link to case study of project -->
-                <br><br>
-                <h4><a href="tech-hub.html">Case Study</a></h4>
-                <br><br>
-            </div><!-- section__projects ends here [tech] -->
-        
+            </section> -->
+            <!-- sectioncasestudy ends here [travel] -->
+
+            <!-- insert 1-2 extra case studies on completion -->
+            <br>
         </div><!-- section__container ends here -->
     </section><!-- projects section ends here -->
 
-    <!-- gallery section -->
-        <!-- mobile & tablet = content center -->
-        <!-- desktop = content center; animation on projects div.box -->
-        <section id="galLink">
-            <div class="section__container">
-            <h2>Development Gallery</h2>
+<!-- gallery section -->
+    <!-- mobile & tablet = content center -->
+    <!-- desktop = content center; animation on projects div.box -->
+    <section id="gall">
+        <div class="section__container">
+            <h2>Projects & Case Studies</h2>
             <br>
-            <p>A gallery consiting of AdobeXD design projects, emulations, recreations & specification layouts of personal web projects.
-            A showcase of JavaScript projects featuring user interactivity, reactive application functionality and complex problem solving 
-            logic. Web emulations & redesigns of popular UX / UI methodologies & features.</p>
+            <p>An AdobeXD gallery consisting of project designs, emulations & recreations. A showcase of JavaScript projects featuring
+            user interactivity & reactive application functionality.</p>
             <br>
-            <div class="box box__animate box__gallery"></div>
-            <br>
-            <!-- link to case study of project -->
-            <p>Click the link to view more now!</p>
-            <br>
-            <h4><a href="projects.html">Personal Projects</a></h4>
-            <br>
+            <div class="box__med box__gallery">
+                <h4><a href="projects.html">Projects</a></h4>
             </div>
-        </section>
+            <br>
+
+            <p>A case study overview describing my work flow, design & development processes, time management & structured tasks planning of
+            personal projects.
+            </p>
+            <br>
+            <div class="box__med box__casestudy">
+                <h4><a href="cases.html">Case Studies</a></h4>
+            </div>
+            <br>
+        </div>
+    </section>
     
     <!-- about section -->
         <!-- mobile & tablet = content center -->
@@ -196,45 +175,47 @@
     <section id="contact">
         <div class="section__container">
         <h2>Contact Info</h2>
+        
+        <div class="tickets__container">
+            <h3>Digital Profiles</h3>
+            <br>
+            <!-- tickets = large btn on hover [desktop] -->
+            <div class="tickets">
+                <i class="fab fa-github"></i>
+                <br>
+                <a href="https://github.com/bionic-fish">Github</a>
+            </div>
+            <!-- tickets = large btn on hover [desktop] -->
+            <div class="tickets">
+                <i class="fab fa-linkedin"></i>
+                <br>
+                <a href="https://www.linkedin.com/in/chris-harris-b9061711a/">LinkedIn</a>
+            </div>
+            <br>
+            <h3>Recruitment</h3>
+            <br>
+            <!-- tickets = large btn on hover [desktop] -->
+            <div class="tickets">
+                <i class="fab fa-google"></i>
+                <br>
+                <a href="mailto:c.d.harris.dedoc@gmail.com">Google</a>
+            </div>
+            <!-- tickets = large btn on hover [desktop] -->
+            <div class="tickets">
+                <i class="far fa-file-alt"></i>
+                <br>
+                <a href="assets/docs/CDHarrisResume-2019.pdf">Resume</a>
+            </div>
+        <br>
         <p>Melbourne based self taught web developer seeking a position of employment as a junior frontend web developer.</p>
         <p>Get in touch using the links below.
         Feel free to browse my github repositories for a indepth look into coding principals, techniques and procedures.</p>
+        </div>
         <br>
+        
         <!-- create google maps API and insert here! -->
         <div id="maps"></div>
         <br>
-    </div>
-
-    <div class="section__container">
-        <h3>Digital Profiles</h3>
-        <br>
-        <!-- tickets = large btn on hover [desktop] -->
-        <div class="tickets">
-            <i class="fab fa-github"></i>
-            <br>
-            <a href="https://github.com/bionic-fish">Github</a>
-        </div>
-        <!-- tickets = large btn on hover [desktop] -->
-        <div class="tickets">
-            <i class="fab fa-linkedin"></i>
-            <br>
-            <a href="https://www.linkedin.com/in/chris-harris-b9061711a/">LinkedIn</a>
-        </div>
-        <br>
-        <h3>Recruitment</h3>
-        <br>
-        <!-- tickets = large btn on hover [desktop] -->
-        <div class="tickets">
-            <i class="fab fa-google"></i>
-            <br>
-            <a href="mailto:c.d.harris.dedoc@gmail.com">Google</a>
-        </div>
-        <!-- tickets = large btn on hover [desktop] -->
-        <div class="tickets">
-            <i class="far fa-file-alt"></i>
-            <br>
-            <a href="assets/docs/CDHarrisResume-2019.pdf">PDF . Resume</a>
-        </div>
     </div><!-- section__container ends here-->
     </section>
     

@@ -15,7 +15,64 @@ section {
     width: 100%;
     height: 350px;
 }
-/* Global props | images + position */
+#maps a {
+    background: none;
+    color: #000;
+}
+/* global containers */
+.section__container,
+.tickets__container {
+    padding: 5px 10px;
+}
+.section__container a {
+    background-color: #333;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    height: 100px;
+    margin: 10px auto;
+    padding: 5px;
+    text-decoration: none;
+    transition: all 2s ease-in;
+    width: 200px;
+}
+
+.section__container a:hover {
+    text-decoration: underline;
+}
+.section__container .box__med h4 {
+    margin: auto;
+    font-size: 30px;
+}
+#caseID a:hover,
+#gall a:hover,
+#projects a:hover {
+    background-color: rgb(43, 201, 153);
+    text-decoration: underline;
+}
+/* tickets contact info */
+.tickets {
+    background-color: #333;
+    border-radius: 5px 5px;
+    margin: 8px;
+    padding: 10px;
+    transition: all 1.5s;
+}
+.tickets:hover{
+    background-color: rgb(43, 201, 153);
+    font-size: 125%;
+    transform: scale(1.1);
+}
+.tickets__container a {
+    background: none;
+    color: #fff;
+    letter-spacing: 2px;
+    text-decoration: none;
+    transition: all 1.5s;
+}
+.tickets__container a:hover {
+    text-decoration: underline;
+}
 /* global box positioning props */
 .box {
     height: 350px;
@@ -37,12 +94,17 @@ section {
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 50%;
+    display: flex;
     height: 250px;
-    margin: 10px auto;  
+    margin: 10px auto;
     width: 250px;
 }
 .box__med {
     background: #000;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid #333;
     border-radius: 10px;
     height: 250px;
     margin: 10px auto;  
@@ -64,14 +126,7 @@ img {
     height: auto;
     width: 100%;
 }
-/* personal portrait props */
-.portrait {
-    border-radius: 50%;
-    border: 10px solid rgb(43, 201, 153);
-    margin: auto;
-    max-width: 250px;
-    max-height: 250px;
-}
+
 /* global props | headings */
 h2 { /* section heading */
     text-decoration: underline;
@@ -84,6 +139,7 @@ h3 {
 #contact h4 {
     text-align: left;
 }
+
 
 /* header + footer props */
 .header,
@@ -120,9 +176,9 @@ h3 {
 .left {float: left;}
 .right {float: right;
 }
-    
 
-/* index.html banner */
+
+/* site wide banner */
 .banner {
     clear: both;  /*clearfix for above span elements */
     color: #fff;
@@ -155,13 +211,29 @@ h3 {
     background: #333;
 } */
 
+/* .tickets__container a {
+    background-color: rgb(43, 201, 153);
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    font-size: 25px;
+    height: 100px;
+    margin: 10px auto;
+    padding: 10px;
+    text-decoration: none;
+    transition: all 2s ease-in;
+    width: 200px;
+} */
+
+
 /* case buttons */
-#projects a,
+/* #projects a,
 #galLink a,
 #blog a,
 #casestudy a,
 #devWork a,
-#comments a  {
+#comments a,
+#caseID a  {
   background-color: #333;
   border-radius: 10px;
   border: none;
@@ -173,17 +245,25 @@ h3 {
   text-decoration: none;
   transition: all 2s ease-in;
   width: 200px;
-}
+} */
 /* case buttons : interactive */
-#projects a:hover,
+/* #projects a:hover,
 #galLink a:hover,
 #blog a:hover,
 #casestudy a:hover,
 #devWork a:hover,
-#comments a:hover {
+#comments a:hover,
+#caseID a:hover {
     background-color: rgb(43, 201, 153);
     text-decoration: underline;
+} */
+
+
+.box,
+.box__med {
+    display: flex;
 }
+
 /* global props | font awesome icons */
 #casestudy i {color: rgb(43, 201, 153);}
 .fab, .far, .fas {
@@ -199,22 +279,7 @@ h3 {
     font-size: 26px;
 }
 
-/* tickets contact info */
-.tickets {
-    border-radius: 5px 5px;
-    margin: 8px;
-    padding: 10px;
-    background-color: #333;
-    transition: all 1.5s;
-}
-.tickets:hover {
-    background-color: rgb(43, 201, 153);
-    transform: scale(1.1);
-}
-.tickets a {
-    color: #fff;
-    text-decoration: none;
-}
+
 
 /* #devWork .box {
     height: 350px;
@@ -269,6 +334,48 @@ h3 {
     background-repeat: no-repeat;
     background-size: cover;
 }
+/* case-[project].html specific props */
+/* case preview containers */
+
+/* case study icons */
+#overview .fab,
+#overview .far,
+#overview .fas {
+    color: rgb(43, 201, 153);
+    font-size: 26px;
+}
+
+
+/* #development .box__med h4 {
+    color: #fff;
+    font-size: 2em;
+    letter-spacing: 2px;
+    margin: auto;
+    text-decoration: underline;
+    text-decoration-color: rgb(43, 201, 153);
+
+} */
+/* case study [travel brochure] */
+.box__trvl-concept {background-image: url("../img/case-study/travelBrochure/xdconcept.JPG");}
+.box__trvl1 {background-image: url("../img/case-study/travelBrochure/landing.JPG");}
+.box__trvl2 {background-image: url("../img/case-study/travelBrochure/content.JPG");}
+.box__trvl3 {background-image: url("../img/case-study/travelBrochure/feature.JPG");}
+
+.box__trvl-html {background-image: url("../img/case-study/travelBrochure/trvl-html.JPG");}
+.box__trvl-css {background-image: url("../img/case-study/travelBrochure/trvl-css.JPG");}
+.box__trvl-js {background-image: url("../img/case-study/travelBrochure/trvl-js.JPG");}
+
+/* case study [coffee shop] */
+.box__coffee-concept {background-image: url("../img/case-study/travelBrochure/xdconcept.JPG");}
+.box__coffee1 {background-image: url("../img/case-study/coffeeShop/landing.JPG");}
+.box__coffee2 {background-image: url("../img/case-study/coffeeShop/content.JPG");}
+.box__coffee3 {background-image: url("../img/case-study/coffeeShop/feature.JPG");}
+
+.box__coffee-html {background-image: url("../img/case-study/coffeeShop/coff-html.JPG");}
+.box__coffee-css {background-image: url("../img/case-study/coffeeShop/coff-css.JPG");}
+.box__coffee-js {background-image: url("../img/case-study/coffeeShop/coff-js.JPG");}
+.box__coffee-test {background-image: url("../img/case-study/coffeeShop/coff-test.JPG");}
+
 
 /* case-[project].html box images */
 .box__book1 {background-image: url("../img/case-study/bookmarkApp/js-icon.JPG");}
@@ -279,12 +386,15 @@ h3 {
 
 
 /* Index.html box background images */
+.box__gallery {background-image: url("../img/box-preview/gallery.JPG");}
+.box__casestudy {background-image: url("../img/box-preview/casestudy.JPG");}
+
 /* personal projects box backgrounds */
 .box__medical {background-image: url("../img/box-Medical.JPG");}
 .box__coffee {background-image: url("../img/box-Cafe.JPG");}
 .box__tech {background-image: url("../img/box-Tech.JPG");}
 .box__travel {background-image: url("../img/box-Travel.JPG");}
-.box__gallery {background-image: url("../img/box-Gallery.JPG");}
+
 .box__project-blog {background-image: url("../img/project-blog.JPG");}
 
 /* projects.html box background images */
@@ -310,6 +420,15 @@ h3 {
 }
 
 /* projects.html mos-item background for Grid Elements */
+/* grid background props */
+.mos-item {
+    background-position: center;
+    background-origin: border-box;
+    background-size: cover;
+    height: 350px;
+    margin: 0 auto;
+    width: 100%;
+  }
 /* mos-item backgrounds */
 .one {background-image: url("../img/grid-gal/grid-item-1.JPG");}
 .two {background-image: url("../img/grid-gal/grid-item-2.JPG");}
@@ -322,15 +441,26 @@ h3 {
 .nine {background-image: url("../img/grid-gal/grid-item-9.JPG");}
 .ten {background-image: url("../img/grid-gal/grid-item-10.JPG");}
 
-/* grid background props */
-.mos-item {
-    background-position: center;
-    background-origin: border-box;
-    background-size: cover;
-    height: 350px;
-    margin: 0 auto;
-    width: 100%;
-  }
+
+/* misc props & elements */
+/* personal portrait props */
+.portrait {
+    border-radius: 50%;
+    filter: grayscale(100%);
+    margin: auto;
+    max-width: 250px;
+    max-height: 250px;
+}
+
+/* case study  */
+.accentHeading {
+    color: rgb(43, 201, 153);
+    text-decoration: underline;
+    text-decoration-color: rgb(43, 201, 153);
+
+}
+
+
 
 /* media queries for desktop */
 /* desktop props + components:
@@ -340,12 +470,14 @@ h3 {
 */
 @media screen and (min-width: 960px) {
     /* personal projects box props */
-    .box__animate {
+    .box__animate,
+    .box__med {
         background-position: top;
         background-size: cover;
         transition: all 3.5s ease;
     }
-    .box__animate:hover {
+    .box__animate:hover,
+    .box__med:hover {
         background-position: bottom;
         background-size: auto;
     }
@@ -353,7 +485,7 @@ h3 {
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        border: 1px solid lightslategray;
+        border: 1px solid #333;
         border-radius: 10px;
         max-width: 940px;
         width: 750px;
@@ -395,7 +527,8 @@ h3 {
     .footer-right {
         float: right;
     }
-    .section__container {
+    .section__container,
+    .tickets__container {
         max-width: 900px;
         margin: auto;
     }
@@ -416,9 +549,6 @@ h3 {
         border: 2px solid #333;
         padding: 10px;
     }
-    
-    
-   
     
     /* Grid props 
         Components: 
@@ -458,6 +588,7 @@ h3 {
     }
     .mos-item:hover {
         background-position: center;
+        border-radius: 20px;
         transform: scale(1.1);
         z-index: 1000;
         opacity: 1;
