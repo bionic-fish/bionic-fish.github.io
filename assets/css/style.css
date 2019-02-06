@@ -349,16 +349,6 @@ h3 {
     font-size: 26px;
 }
 
-
-/* #development .box__med h4 {
-    color: #fff;
-    font-size: 2em;
-    letter-spacing: 2px;
-    margin: auto;
-    text-decoration: underline;
-    text-decoration-color: rgb(43, 201, 153);
-
-} */
 /* case study [travel brochure] */
 .box__trvl-concept {background-image: url("../img/case-study/travelBrochure/xdconcept.JPG");}
 .box__trvl1 {background-image: url("../img/case-study/travelBrochure/landing.JPG");}
@@ -463,7 +453,12 @@ h3 {
     text-decoration-color: rgb(43, 201, 153);
 
 }
+.plink {
+    color: green;
+    background: none;
 
+    font-size: 0;
+}
 
 
 /* media queries for desktop */
