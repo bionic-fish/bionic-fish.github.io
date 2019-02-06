@@ -24,11 +24,13 @@ section {
 .tickets__container {
     padding: 5px 10px;
 }
+
 .section__container a {
     background-color: #333;
     border-radius: 10px;
     border: none;
     color: #fff;
+    font-size: 30px;
     height: 100px;
     margin: 10px auto;
     padding: 5px;
@@ -39,6 +41,7 @@ section {
 
 .section__container a:hover {
     text-decoration: underline;
+    background-color: rgb(43, 201, 153);
 }
 .section__container .box__med h4 {
     margin: auto;
@@ -46,7 +49,8 @@ section {
 }
 #caseID a:hover,
 #gall a:hover,
-#projects a:hover {
+#projects a:hover,
+#blogProjects a:hover {
     background-color: rgb(43, 201, 153);
     text-decoration: underline;
 }
@@ -58,7 +62,7 @@ section {
     padding: 10px;
     transition: all 1.5s;
 }
-.tickets:hover{
+.tickets:hover {
     background-color: rgb(43, 201, 153);
     font-size: 125%;
     transform: scale(1.1);
